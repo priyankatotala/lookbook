@@ -1,0 +1,18 @@
+<div class="{% if settings.show_sidebar %}span9{% else %}span12{% endif %}" id="main-content">
+	<h1>{{ page.title }}</h1>
+	<hr>
+	<div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div>
+{{ page.content }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'latest-addition':{{ pages.latest-addition.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/eshopping.myshopify.com/mod_media_lightbox_list_19ef8.js?t=1406766612";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>

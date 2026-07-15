@@ -1,0 +1,968 @@
+if(typeof myAppJavaScriptmodLookbook != "function"){
+var myAppJavaScriptmodLookbook = function($) {
+var pages = [    
+        {
+        page: '1',
+        image: {"file_name":"lookbook-modmedia-3656-page-37992.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-37992.jpg?16085396157370404550","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:361.80,
+                left:214.40,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1460627096.6335.jpg?v=1471861609",
+                handle: "jeans-belt-belts-4"
+                }
+                        ]}
+        ,        {
+        page: '2',
+        image: {"file_name":"lookbook-modmedia-3656-page-37993.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-37993.jpg?15695643710012667274","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        ]}
+        ,        {
+        page: '3',
+        image: {"file_name":"lookbook-modmedia-3656-page-37994.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-37994.jpg?11597907837836297552","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        ]}
+        ,        {
+        page: '4',
+        image: {"file_name":"lookbook-modmedia-3656-page-37995.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-37995.jpg?17662549812045062795","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:439.80,
+                left:592.80,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1460631320.2446.jpg?v=1471861667",
+                handle: "smal-belt-belts"
+                }
+                ,                {
+                item:2,
+                top:259.80,
+                left:679.20,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1485260851.3421.jpg?v=1485260889",
+                handle: "biker-jacket-jackets-5"
+                }
+                        ]}
+        ,        {
+        page: '5',
+        image: {"file_name":"lookbook-modmedia-3656-page-37996.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-37996.jpg?5398972839782199790","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:416.98,
+                left:162.26,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1470746801.6418.jpg?v=1485167722",
+                handle: "small-bag-clutch-small-bag-clutch-38"
+                }
+                        ]}
+        ,        {
+        page: '6',
+        image: {"file_name":"lookbook-modmedia-3656-page-37997.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-37997.jpg?9804031245430960245","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:184.56,
+                left:341.66,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"",
+                icon_width: "",
+                icon_height: "",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1460631447.9458.jpg?v=1485333500",
+                handle: "jeans-belt-belts-2"
+                }
+                ,                {
+                item:2,
+                top:360.38,
+                left:396.23,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1470743222.6955.jpg?v=1484651680",
+                handle: "small-bag-clutch-small-bag-clutch-29"
+                }
+                ,                {
+                item:3,
+                top:196.86,
+                left:270.44,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1460631447.9458.jpg?v=1485333500",
+                handle: "jeans-belt-belts-2"
+                }
+                ,                {
+                item:4,
+                top:18.24,
+                left:403.77,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1484654625.5528.jpg?v=1484654653",
+                handle: "biker-jacket-jackets-4"
+                }
+                        ]}
+        ,        {
+        page: '7',
+        image: {"file_name":"lookbook-modmedia-3656-page-37998.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-37998.jpg?4240489244373599868","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:502.52,
+                left:718.24,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1470747183.5056.jpg?v=1484652058",
+                handle: "medium-bag-medium-bag-21"
+                }
+                ,                {
+                item:2,
+                top:157.86,
+                left:457.86,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1485260929.937.jpg?v=1485261306",
+                handle: "top-tops-1"
+                }
+                        ]}
+        ,        {
+        page: '8',
+        image: {"file_name":"lookbook-modmedia-3656-page-37999.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-37999.jpg?16116138610922152414","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:288.68,
+                left:246.54,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1470745656.6228.jpg?v=1484847409",
+                handle: "cross-over-cross-over-28"
+                }
+                        ]}
+        ,        {
+        page: '9',
+        image: {"file_name":"lookbook-modmedia-3656-page-38000.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-38000.jpg?8453820813188955737","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:210.00,
+                left:578.40,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1460631342.5812.jpg?v=1478694974",
+                handle: "jeans-belt-belts-15"
+                }
+                ,                {
+                item:2,
+                top:156.60,
+                left:644.03,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "//cdn.shopify.com/s/assets/image-upload-899ed12e0ca7dd5ac65df627c3b5bf54.png",
+                handle: ""
+                }
+                        ]}
+        ,        {
+        page: '10',
+        image: {"file_name":"lookbook-modmedia-3656-page-38001.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-38001.jpg?17475459264612092752","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:191.82,
+                left:200.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1484654848.6883.jpg?v=1484654890",
+                handle: "shirt-tops"
+                }
+                ,                {
+                item:2,
+                top:374.21,
+                left:155.97,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1485243699.744.jpg?v=1485299887",
+                handle: "a-skirt-skirts"
+                }
+                ,                {
+                item:3,
+                top:474.84,
+                left:88.05,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1472463173.1775.jpg?v=1484651938",
+                handle: "small-bag-clutch-small-bag-clutch-35"
+                }
+                        ]}
+        ,        {
+        page: '11',
+        image: {"file_name":"lookbook-modmedia-3656-page-38002.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-38002.jpg?12022612009090524778","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:478.62,
+                left:637.74,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1472463247.895.jpg?v=1484651972",
+                handle: "large-bag-large-bag-7"
+                }
+                ,                {
+                item:2,
+                top:284.91,
+                left:723.27,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1485260851.3421.jpg?v=1485260889",
+                handle: "biker-jacket-jackets-5"
+                }
+                        ]}
+        ,        {
+        page: '12',
+        image: {"file_name":"lookbook-modmedia-3656-page-38003.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-38003.jpg?2253388847440064745","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:327.00,
+                left:135.20,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1471867858.5236.jpg?v=1475229508",
+                handle: "pant-pants-1"
+                }
+                ,                {
+                item:2,
+                top:200.63,
+                left:168.55,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1484653237.3062.jpg?v=1485261439",
+                handle: "top-tops"
+                }
+                ,                {
+                item:3,
+                top:453.46,
+                left:221.38,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1476775450.8757.jpg?v=1485167888",
+                handle: "shopper-shopper-13"
+                }
+                        ]}
+        ,        {
+        page: '13',
+        image: {"file_name":"lookbook-modmedia-3656-page-38004.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-38004.jpg?9162502672662933367","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:45.91,
+                left:466.67,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1471867858.5236.jpg?v=1475229508",
+                handle: "pant-pants-1"
+                }
+                ,                {
+                item:2,
+                top:361.64,
+                left:611.32,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1470743317.827.jpg?v=1485262528",
+                handle: "cross-over-cross-over-25"
+                }
+                        ]}
+        ,        {
+        page: '14',
+        image: {"file_name":"lookbook-modmedia-3656-page-38005.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-38005.jpg?11907383487668761094","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:295.20,
+                left:181.60,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1462971976.2984.jpg?v=1485333497",
+                handle: "small-bag-clutch-small-bag-clutch-12"
+                }
+                ,                {
+                item:2,
+                top:372.60,
+                left:140.80,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1471867858.5236.jpg?v=1475229508",
+                handle: "pant-pants-1"
+                }
+                        ]}
+        ,        {
+        page: '15',
+        image: {"file_name":"lookbook-modmedia-3656-page-38006.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-38006.jpg?6000719222436026555","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:484.80,
+                left:594.40,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1477651543.4538.jpg?v=1485263483",
+                handle: "jeans-belt-belts-6"
+                }
+                ,                {
+                item:2,
+                top:307.55,
+                left:672.96,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1485243742.2225.jpg?v=1485249909",
+                handle: "jacket-jackets-7"
+                }
+                        ]}
+        ,        {
+        page: '16',
+        image: {"file_name":"lookbook-modmedia-3656-page-38007.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/1448\/3666\/t\/2\/assets\/lookbook-modmedia-3656-page-38007.jpg?8455463319555619710","image_width":800,"image_height":600,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:276.10,
+                left:64.15,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/1448/3666/t/2/assets/lb_mm_circle_0000_2552552550.png?16619908290843284501",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/1448/3666/products/1484654917.4987.jpg?v=1485249913",
+                handle: "t-shirt-tops"
+                }
+                        ]}
+        ];
+var css = "#lookbook-modmedia-3656 .fflex-control-paging li a { width: 11px; height: 11px; -webkit-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8); -moz-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8); -o-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8); box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8); text-indent: -9999px; margin-top: 0px; margin-top: 6px; margin-top: 6px; margin-top: 0px; background: #000000; border-style: none; border-width: 0px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; border-color: #000000; color: #000000; } #lookbook-modmedia-3656 .fflex-control-paging li a:hover { background: #444444; border-color: #444444; color: #444444; } #lookbook-modmedia-3656 .fflex-control-paging li a.fflex-active { background: #efefef; border-color: #efefef; color: #efefef; }";
+var style = document.createElement('style');
+
+style.type = 'text/css';
+if (style.styleSheet){
+style.styleSheet.cssText = css;
+} else {
+style.appendChild(document.createTextNode(css));
+}
+document.getElementsByTagName("head")[0].appendChild(style);
+
+if((typeof Shopify) == 'undefined'){
+if ((typeof Shopify) == 'undefined') {
+var Shopify = {};
+}
+/* ---------------------------------------------------------------------------
+* Money format handler single/slideshow
+* ---------------------------------------------------------------------------*/
+Shopify.money_format = "$ {{amount}}";
+Shopify.formatMoney = function(cents, format) {
+if (typeof cents == 'string') cents = cents.replace('.','');
+var value = '';
+var patt = /\{\{\s*(\w+)\s*\}\}/;
+var formatString = (format || this.money_format);
+
+function addCommas(moneyString) {
+return moneyString.replace(/(\d+)(\d{3}[\.,]?)/,'$1,$2');
+}
+
+switch(formatString.match(patt)[1]) {
+case 'amount':
+value = addCommas(floatToString(cents/100.0, 2));
+break;
+case 'amount_no_decimals':
+value = addCommas(floatToString(cents/100.0, 0));
+break;
+case 'amount_with_comma_separator':
+value = floatToString(cents/100.0, 2).replace(/\./, ',');
+break;
+case 'amount_no_decimals_with_comma_separator':
+value = addCommas(floatToString(cents/100.0, 0)).replace(/\./, ',');
+break;
+}
+return formatString.replace(patt, value);
+};
+
+function floatToString(numeric, decimals) {  
+var amount = numeric.toFixed(decimals).toString();  
+if(amount.match(/^\.\d+/)) {return "0"+amount; }
+else { return amount; }
+};
+
+}
+(function ($, document, undefined) {
+$.modresize=function(){
+$('.modmedia-image').each(function() {
+var image_width = $(this).attr('data-width');
+var image_height = $(this).attr('data-height');
+var ratio = Math.round(($(this).width() / image_width) * 1000) / 1000;
+if(ratio <0.5){ ratio_resize=0.5;}else{ ratio_resize=ratio;}
+$(this).parent().find('.lookbook-item').each(function() {
+$(this).width($(this).attr('data-width') * ratio_resize);
+$(this).height($(this).attr('data-height') * ratio_resize);
+var top = Math.round($(this).attr('data-top') / (image_height) * 1000) / 1000;
+var left = Math.round($(this).attr('data-left') / (image_width) * 1000) / 1000;
+$(this).css({
+top: top * ratio * image_height,
+left: left * ratio * image_width
+});
+});
+});
+};
+var flexslider_container=$('<div  id="lookbook-modmedia-3656" class="lookbook-modmedia-container"></div>');
+var flexsliderwr=$('<div class="lookbook-modmedia-flexslider"></div>');
+var ul_pages=$('<ul class="lookbook_slides"></ul>');
+$('#lookbook-modmedia-container').append(flexslider_container);
+var list_pages='';
+if(pages.length == 0){
+ul_pages.append('<li>There is no pages in this Lookbook.</li>');
+}else{
+$.each(pages, function(page_index){
+list_pages=$('<li></li>');
+var page_image='';
+var page_image_width=0;
+var page_image_height=0;
+if(pages[page_index].image['full_path']!== undefined){
+page_image='<img src="' + pages[page_index].image['full_path'] + '" alt="Main image"/>';
+page_image_width=pages[page_index].image['image_width'];
+page_image_height=pages[page_index].image['image_height'];
+}
+var modimage=$('<div class="modmedia-image" data-width="'+page_image_width + '" data-height="' + page_image_height + '" style="max-width:'+page_image_width + 'px;">'+page_image+'</div>');
+var hovers=$('<div class="hovers"></div>');
+var products=pages[page_index].products;
+var page=pages[page_index].page;
+$.each(products, function(prod){
+var display_image='';
+if(products[prod].show_image == 1){
+display_image='<div class="modmedia-lookbook-product-image"><img style="max-width:150px; max-height:150px;" src="' + products[prod].image + '" alt="' + products[prod].handle + '"/></div>';
+}
+var display_name_price='';
+if(products[prod].show_title == 1){
+display_name_price='<div class="name"></div>';
+}
+if(products[prod].show_price == 1){
+display_name_price+='<div class="price"></div>';
+}
+if(display_name_price!=''){
+display_name_price='<div class="name-price">'+display_name_price+'</div>';
+}
+var pin='<a href="'+products[prod].url+'" target="'+products[prod].link_target+'"><img src="'+products[prod].icon+'" alt="+"/></a>';
+hovers.append('<div id="pin-'+page+'-'+products[prod].item+'" data-container="modmedia-lookbook-item-hover" class="lookbook-item pin-'+page+'-'+products[prod].item+'" data-item="'+prod+'" data-width="'+products[prod].icon_width+'" data-height="'+products[prod].icon_height+'" data-id="'+products[prod].item+'" data-top="'+products[prod].top+'" data-left="'+products[prod].left+'" data-image="'+products[prod].image+'" data-name="" data-linkto="'+products[prod].linkto+'" data-link_target="'+products[prod].link_target+'" data-url="'+products[prod].url+'" data-handle="'+products[prod].handle+'" data-price="" data-custom_title="'+products[prod].custom_title+'" style="top:'+products[prod].top+'px; left:'+products[prod].left+'px;">'+pin+'<div id="modhover-pin-'+page+'-'+products[prod].item+'" class="modhover-pin-'+page+'-'+products[prod].item+' modmedia-lookbook-item-hover ml-item-hover-spring-summer-collection-2017">'+display_image+display_name_price+'</div>'+'</div>');
+});
+modimage.append(hovers);
+list_pages.append(modimage);                      
+ul_pages.append(list_pages);              
+});
+}
+flexslider_container.append(flexsliderwr);
+flexsliderwr.append(ul_pages);
+$('.lookbook-modmedia-flexslider').flexslider({
+namespace: "fflex-",
+selector: ".lookbook_slides > li",   
+animation: "slide",
+animationLoop: false,
+slideshow: false,
+    direction: "horizontal",
+    reverse: false,
+    smoothHeight: false,
+    slideshowSpeed: 7000,
+    animationSpeed: 600,
+    controlNav: true,
+    directionNav: true,
+    prevText: "Previous",
+    nextText: "Next",
+start:function(){
+$(window).resize();
+},
+before:function(){
+$('.modmedia-lookbook-item-hover').hide();                
+}
+});
+$( "#lookbook-modmedia-container img" ).load(function() {
+$(window).resize();
+}); 
+$(window).resize(function() {
+$.modresize();
+});
+$(window).load(function() {
+$.modresize();
+});
+$.check_loaded=function(e, obj, value){
+var item=obj.attr('id');
+var hover_product=$('.modhover-'+item);
+if(obj.attr('data-loaded')=='1'){
+$.positionBox(e, obj, hover_product);
+}else{
+if(hover_product.find('.name')){
+if(value=='name'){
+obj.attr('nameloaded',1);
+}
+}else{
+obj.attr('nameloaded',1);
+}
+if(hover_product.find('.price')){
+if(value=='price'){
+obj.attr('priceloaded',1);
+}
+}else{
+obj.attr('priceloaded',1);
+}
+if(obj.attr('nameloaded') == 1 && obj.attr('priceloaded') == 1){
+obj.removeAttr('nameloaded');
+obj.removeAttr('priceloaded');
+obj.removeAttr('imageloaded');
+obj.attr('data-loaded',1);
+obj.parent().find('.loading-look-product').remove();
+$.positionBox(e, obj, hover_product);
+}
+}
+};
+/* shreeji add code start for mobile device */
+    $('.lookbook-item').click(function() {
+        if($("#"+$(this).attr('id')+' a').attr('href')==""||$("#"+$(this).attr('id')+' a').attr('href')=="undefined"){
+            return false;
+        } else{
+            var item=$(this).attr('id');
+            var link=$('<a href ="'+$(this).attr('data-url')+'" target="'+$(this).attr('data-link_target')+'"></a>');
+            link[0].click();
+            return true;
+        }
+
+    });   
+/* shreeji add code end for mobile device */
+$('.lookbook-item').mouseover(function(e) {
+var thise=e;
+var thisobj=$(this);
+var item=$(this).attr('id');
+var hover_product=$('.modhover-'+item);
+if($(this).find('.modhover-'+item).length>0){
+if($('.modhover-'+item).length>1){
+$('.modhover-'+item).eq(1).remove();
+hover_product=$('.modhover-'+item);
+}
+hover_product.appendTo($('body'));
+}
+$('.modmedia-lookbook-item-hover:not('+'.modhover-'+item+')').fadeOut();
+if($(this).attr('data-handle')!=''){
+if($(this).attr('data-name')==''){
+var loadingtxt=$('<div class="loading-look-product">Loading...</div>');
+$(this).parent().append(loadingtxt);
+loadingtxt.css({
+top:$(this).position().top + 20,
+left:$(this).position().left + 20,
+position:'absolute'
+});
+hover_product.find('.name').hide();
+hover_product.find('.price').hide();
+var handle=$(this).attr('data-handle');
+$.ajax({
+url:'/products/'+handle+'.js',
+type:'GET',
+dataType:'json',
+success:function(data){
+if(hover_product.find('.name')){
+if($('#'+item).attr('data-custom_title') != ''){
+$('#'+item).attr('data-name',$('#'+item).attr('data-custom_title'));
+}else{
+$('#'+item).attr('data-name',data.title);
+}
+hover_product.find('.name').text($('#'+item).attr('data-name'));
+hover_product.find('.name').fadeIn();
+$.check_loaded(e, thisobj, 'name');
+}
+if(hover_product.find('.price')){
+var price='';
+if(data.price_varies){
+price='<span class="from">from:</span> <span class="price_value">'+Shopify.formatMoney(data.price_min,modlookbook_money_with_currency_format)+'</span>';
+}else{
+price='<span class="price_value">'+Shopify.formatMoney(data.price,modlookbook_money_with_currency_format)+'</span>';
+}
+if(data.compare_at_price > 0){
+if(data.compare_at_price_varies){
+if(data.price_min != data.compare_at_price_min || data.price_max != data.compare_at_price_max){
+price=price+'<em class="compare_at_price">'+Shopify.formatMoney(data.compare_at_price_min,modlookbook_money_with_currency_format)+'</em>';
+}
+}else{
+if(data.price != data.compare_at_price){
+price=price+'<em class="compare_at_price">'+Shopify.formatMoney(data.compare_at_price,modlookbook_money_with_currency_format)+'</em>';
+}
+}
+}
+$('#'+item).attr('data-price',price);
+hover_product.find('.price').html(price);
+hover_product.find('.price').fadeIn();
+$.check_loaded(e, thisobj, 'price');
+}
+if($('#'+item).attr('data-linkto')=="1"){
+$('#'+item).attr('data-url',data.url);
+$('#'+item+' a').attr('href',data.url);
+}
+hover_product.wrapInner('<a href="'+data.url+'" target="'+$('#'+item).attr('data-link_target')+'"></a>');
+$(window).resize();
+},
+error:function(x,e){
+thisobj.parent().find('.loading-look-product').remove();
+}
+});
+}else{
+hover_product.find('.name').html($(this).attr('data-name'));
+hover_product.find('.price').html($(this).attr('data-price'));
+$(window).resize();
+}                
+}else{
+
+                if($(this).find('.modhover-'+item).length>0){
+                    if($('.modhover-'+item).length>1){
+                        $('.modhover-'+item).eq(1).remove();
+                        hover_product=$('.modhover-'+item);
+                    }
+                    hover_product.appendTo($('body'));
+                }
+                if($(this).attr('data-custom_title')!=''){              
+                    hover_product.find('.name').hide();
+                    hover_product.find('.price').hide();
+                    hover_product.find('.name').text($(this).attr('data-custom_title'));
+                    hover_product.find('.name').fadeIn();
+                    thisobj.attr('data-loaded',1);
+                }
+                /*added by shree for iphone*/
+                if($(this).attr('data-handle')==''){
+                  if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) 
+                      window.location=$(this).attr('data-url');
+                }
+                /*added by shree for iphone*/
+            }
+$.check_loaded(e, thisobj, '');
+});
+$.positionBox=function(e, obj, hover_product){
+hover_product.css({
+visibility: "hidden",
+display: "block"
+});
+var win = $(window);
+var viewport = {
+top : win.scrollTop(),
+left : win.scrollLeft()
+};
+viewport.right = viewport.left + win.width();
+viewport.bottom = viewport.top + win.height();
+
+var left=e.pageX+ (obj.outerWidth()/2);
+var top=e.pageY + (obj.outerHeight()/2);
+
+hover_product.css({
+position:'absolute',
+top: top,
+left: left                
+});
+
+var bounds = hover_product.offset();
+bounds.right = bounds.left + hover_product.outerWidth();
+bounds.bottom = bounds.top + hover_product.outerHeight();
+if(bounds.right > win.width()){
+left=e.pageX - (bounds.right-viewport.right); 
+}
+
+if(bounds.bottom > win.height()){
+newtop=e.pageY - hover_product.outerHeight() - (obj.outerHeight()/2);
+if(newtop > viewport.top){
+top=newtop;
+}
+}
+hover_product.css({
+position:'absolute',
+top: top,
+left: left
+});
+hover_product.css({
+visibility: "visible",
+display: "block"
+});
+hover_product.fadeIn();
+obj.mousemove();
+};
+$('.lookbook-item').mousemove(function(e){
+var item=$(this).attr('id');
+var hover_product=$('.modhover-'+item);
+
+var win = $(window);
+var viewport = {
+top : win.scrollTop(),
+left : win.scrollLeft()
+};
+viewport.right = viewport.left + win.width();
+viewport.bottom = viewport.top + win.height();
+
+var left=e.pageX+ ($(this).outerWidth()/2);
+var top=e.pageY + ($(this).outerHeight()/2);
+
+hover_product.css({
+position:'absolute',
+top: top,
+left: left
+});
+
+var bounds = hover_product.offset();
+bounds.right = bounds.left + hover_product.outerWidth();
+bounds.bottom = bounds.top + hover_product.outerHeight();
+if(bounds.right > win.width()){
+left=e.pageX - (bounds.right-viewport.right); 
+}
+
+if(bounds.bottom > win.height()){
+newtop=e.pageY - hover_product.outerHeight() - ($(this).outerHeight()/2);
+if(newtop > viewport.top){
+top=newtop;
+}
+}
+hover_product.css({
+position:'absolute',
+top: top,
+left: left
+});
+});
+var timers={};
+$('.lookbook-item').mouseout(function() {
+var item=$(this).attr('id');
+var hover_product=$('.modhover-'+item);
+timers['i-'+item]=setTimeout(function(){ hover_product.fadeOut();},200);
+});
+$('.modmedia-lookbook-item-hover').mouseover(function(){
+var id=$(this).attr('id');
+$('.'+id).fadeIn(0);
+var item=id.replace('modhover-','');
+if((typeof timers['i-'+item]) !== 'undefined'){
+clearTimeout(timers['i-'+item]);
+}
+$('.modmedia-lookbook-item-hover:not('+'.'+id+')').fadeOut();            
+});
+$('.modmedia-lookbook-item-hover').mouseout(function(){
+var id=$(this).attr('id');
+var item=id.replace('modhover-','');
+timers['i-'+item]=setTimeout(function(){ $('#'+id).fadeOut();},100);
+});
+})(modlookbookjQuery, document);
+};
+set_modlookbookjquery();
+}

@@ -1,0 +1,25 @@
+{% layout 'wo-login-theme' %}
+{% include 'gbee-env-variables' %}
+{% include 'gbee-variables' %}
+
+<div id="page" class="clearfix responsive">
+ 
+    
+    <div class="clearfix row responsive large-10 medium-10 small-10">
+      <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div>{{ page.content }}{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'haute-factor':{{ pages.haute-factor.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/gbee.myshopify.com/mod_media_lightbox_list_18052.js?t=1415784628";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+    </div>
+ 
+</div> <!-- /#page --> 

@@ -1,0 +1,46 @@
+{% comment %}
+Re-use the 'rte' class wherever you output content that was added by a merchant using
+the Rich Text Editor ( 'rte' stands for rich text editor ).
+Style all HTML elements in that content the same way across the board.
+Use the 'rte' class in your CSS to help maintain that consistency.
+Example: the h2 element should have the same size and color in:
+- product descriptions
+- collection descriptions
+- 'page' pages' content
+- blog post
+{% endcomment %}
+
+
+  <a class="menu-link icon-plus" href="#menu">NAVIGATE</a>
+
+  <div class="cart-search">
+    <form id="search-form" placeholder="Search">
+      <input type="search" placeholder="what are you looking for?">
+    </form>
+    <span class="icon-search"></span>
+    {% include 'add-to-cart' %}
+  </div>
+
+  <div id="lookbook-page" class="row">
+    <div class="large-12 columns">
+
+      <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div>{{ page.content }}{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'stazia-loren-lookbook':{{ pages.stazia-loren-lookbook.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/stazia-loren.myshopify.com/mod_media_lightbox_list_f2025.js?t=1426398026";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+    </div>
+  </div>
+  
+
+
+{% include 'footer' %}

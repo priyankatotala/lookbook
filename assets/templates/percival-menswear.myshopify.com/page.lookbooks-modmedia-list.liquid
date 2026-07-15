@@ -1,0 +1,39 @@
+<div class="section-title desktop-12 mobile-3">
+  <h1>{{ page.title }}</h1>
+</div>
+
+<div class="{% if settings.pagelist == '' %}desktop-12 tablet-6 mobile-3{% else %}desktop-9 tablet-4 mobile-3{% endif %}">
+  <div class="rte">
+    <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'test':{{ pages.test.content | json }},'limited-edition-knitwear':{{ pages.limited-edition-knitwear.content | json }},'1-of-30-made-in-london':{{ pages.1-of-30-made-in-london.content | json }},'japanese-shirting':{{ pages.japanese-shirting.content | json }},'spring-17-a-treviso-vintage':{{ pages.spring-17-a-treviso-vintage.content | json }},'lookbook-carousel':{{ pages.lookbook-carousel.content | json }},'shirting-carousel':{{ pages.shirting-carousel.content | json }},'shirt-carousel':{{ pages.shirt-carousel.content | json }},'summer-lookbook':{{ pages.summer-lookbook.content | json }},'shirting-carousel-2':{{ pages.shirting-carousel-2.content | json }},'pre-fall-17-outerwear':{{ pages.pre-fall-17-outerwear.content | json }},'outerwear-carousel':{{ pages.outerwear-carousel.content | json }},'the-tama-collection':{{ pages.the-tama-collection.content | json }},'coffee-in-soho':{{ pages.coffee-in-soho.content | json }},'winter-2017-part-i':{{ pages.winter-2017-part-i.content | json }},'japanese-spring-shirts':{{ pages.japanese-spring-shirts.content | json }},'the-okinawa-exchange':{{ pages.the-okinawa-exchange.content | json }},'holiday-from-home':{{ pages.holiday-from-home.content | json }},'summer-18-part-i':{{ pages.summer-18-part-i.content | json }},'perci-x-halloween':{{ pages.perci-x-halloween.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/percival-menswear.myshopify.com/mod_media_lightbox_list_20709.js?t=1592926740";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+  </div>
+</div>
+
+{% if settings.pagelist != '' %}
+  <div id="page-sidebar" class="desktop-3 tablet-2 mobile-3">
+    <h2>{{ settings.page-sidebar-title }}</h2>
+    <ul>
+      {% for link in linklists[settings.pagelist].links %}
+        <li>{{ link.title | link_to: link.url }}</li>
+      {% endfor %}
+    </ul>
+
+    {% if settings.pagelist == '' %}
+      <p>You are seeing this message as you have yet to pick a linklist in the Pages and contact form section of the theme settings</p>
+      <p>In your admin click on Themes > Customize Theme > Pages and Contact form and choose a Linklist from the dropdown in the area marked Choose a linklist for page sidebar</p>
+    {% endif %}
+
+  </div>
+{% endif %}

@@ -1,0 +1,73 @@
+{% comment %}
+Re-use the 'rte' class wherever you output content that was added by a merchant using
+the Rich Text Editor ( 'rte' stands for rich text editor ).
+Style all HTML elements in that content the same way across the board.
+Use the 'rte' class in your CSS to help maintain that consistency.
+Example: the h2 element should have the same size and color in:
+- product descriptions
+- collection descriptions
+- 'page' pages' content
+- blog post
+{% endcomment %}
+
+<!-- <h1>{{ page.title }}</h1> -->
+<div class="rte">
+  <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/sinful-jewels-2.myshopify.com/mod_media_lightbox_683d6{{page.id}}.js?t=1509492739";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+<!-- <div class="slider-wrapper">
+  	<div id="slide" class="nivoSlider theme-default">
+      <img src="https://cdn.shopify.com/s/files/1/0822/3825/files/look1.jpg?2492325982486931596" alt="lookbook" /> 
+      <img src="https://cdn.shopify.com/s/files/1/0822/3825/files/look2.jpg?7410309010493843685" alt="lookbook" />
+    </div>
+</div>  
+</div> -->
+
+	<div class="tp-banner-container">
+		<div class="tp-banner" >
+			<ul>
+              
+    {% for i in (1..10) %}
+        {% capture show_slide %}display_lookbook_{{ i }}{% endcapture %}    
+    {% capture image %}lookbook_{{ i }}.jpg{% endcapture %}
+    {% capture link %}lookbook_{{ i }}_link{% endcapture %}
+    {% capture alt %}lookbook_{{ i }}_alt{% endcapture %}
+    {% if settings[show_slide] %}
+      {% if settings[link] != blank %}
+      	<a href="{{ settings[link] }}">
+      {%endif%}  
+				<li data-transition="random" data-slotamount="7" data-masterspeed="1500" >
+					<img src="{{ image | asset_url }}"  alt="{{ settings[alt] | escape }}"  data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
+				</li>
+      {% if settings[link] != blank %}
+        </a>
+      {% endif %}
+        {% endif %}
+        {% endfor %}              
+              
+			</ul>
+		</div>
+	</div>      
+
+  
+  
+<script>
+  $(document).ready(function() {
+    
+//     $('#slider').nivoSlider({
+//       effect: "fade", 
+//       pauseTime: 7000,
+//       controlNav: true
+//     });
+    
+  });  
+</script>

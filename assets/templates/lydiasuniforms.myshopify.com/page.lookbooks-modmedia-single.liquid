@@ -1,0 +1,16 @@
+<a name="pagecontent" id="pagecontent"></a>
+
+<div class="sixteen columns page">
+  {% include 'page-multi-column', content: page.content %}
+</div><div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="single">
+            <div class="look-container"><div id="lookbook-modmedia-container">
+            </div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/lydiasuniforms.myshopify.com/mod_media_lightbox_029f0{{page.id}}.js?t=1539543273";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>

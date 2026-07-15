@@ -1,0 +1,24 @@
+<div class="Container">
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <div class="PageContent PageContent--narrow Rte">
+    <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'fa16-test':{{ pages.fa16-test.content | json }},'studio-series-iii':{{ pages.studio-series-iii.content | json }},'pre-fall-2017':{{ pages.pre-fall-2017.content | json }},'resort-2018':{{ pages.resort-2018.content | json }},'holiday-2016':{{ pages.holiday-2016.content | json }},'natural-beauties':{{ pages.natural-beauties.content | json }},'queen-of-the-night':{{ pages.queen-of-the-night.content | json }},'holiday-2017':{{ pages.holiday-2017.content | json }},'holiday-gift-guide-2017':{{ pages.holiday-gift-guide-2017.content | json }},'hello-spring':{{ pages.hello-spring.content | json }},'test-2':{{ pages.test-2.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/lorenhope-com.myshopify.com/mod_media_lightbox_list_6bf88.js?t=1537911068";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+  </div>
+</div>

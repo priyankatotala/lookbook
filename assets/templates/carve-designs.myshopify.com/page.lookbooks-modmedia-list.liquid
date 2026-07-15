@@ -1,0 +1,41 @@
+{% section 'page-header' %}
+
+<div class="page-width {{ page.title | handleize }}">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+    {% if section.settings.bg_header_image == '' %}
+      <header>
+        <div class="section-header text-center">
+          <h1>{{ page.title }}</h1>
+        </div>
+      </header>
+    {% endif %}
+
+      <div class="rte">
+        <div id="modmedia-lookbooks" class="list">
+                            <div id="lookbook-modmedia-container">
+                            Loading...
+                            </div>
+                </div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+                {{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+                <script type="text/javascript">
+                var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+                var pages_content = {'april-2020':{{ pages.april-2020.content | json }},'june-2020':{{ pages.june-2020.content | json }},'march-2021':{{ pages.march-2021.content | json }},'june-2021':{{ pages.june-2021.content | json }},'july-2021':{{ pages.july-2021.content | json }},'september-2021':{{ pages.september-2021.content | json }},'september-2022':{{ pages.september-2022.content | json }},'march-2023':{{ pages.march-2023.content | json }},'april-2023':{{ pages.april-2023.content | json }},'may-2021':{{ pages.may-2021.content | json }},'november-2022':{{ pages.november-2022.content | json }},'february-2022':{{ pages.february-2022.content | json }},'march-2022':{{ pages.march-2022.content | json }},'april-2022':{{ pages.april-2022.content | json }},'may-2022':{{ pages.may-2022.content | json }},'june-2022':{{ pages.june-2022.content | json }},'october-2022':{{ pages.october-2022.content | json }},'november-2023':{{ pages.november-2023.content | json }},'february-2023':{{ pages.february-2023.content | json }},'november-2020':{{ pages.november-2020.content | json }},'july-2022':{{ pages.july-2022.content | json }},'march-2020':{{ pages.march-2020.content | json }},'may-2019':{{ pages.may-2019.content | json }},'june-2019':{{ pages.june-2019.content | json }},'march-2019':{{ pages.march-2019.content | json }}};
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.src = "https://modapps2.com.au/lookbook/assets/templates/carve-designs.myshopify.com/mod_media_lightbox_list_1e7fc.js?t=1678999611";
+                    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+      </div>
+      {% if page.title == 'Contact Carve Designs'%}
+        {% section 'feature-columns-contact' %}
+        {% section 'rich-text-contact' %}
+      {% endif %}
+      
+      {% if page.title == 'Careers' %}
+        {% section 'rich-text-careers' %}
+      {% endif %}
+
+    </div>
+  </div>
+</div>

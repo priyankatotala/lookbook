@@ -1,0 +1,37 @@
+{% capture push_header %}
+  <div class="header__push">
+    <div class="container">
+      <div class="inner">
+        {% include 'breadcrumb' %}
+
+        <div class="header__push-content">
+          <h1 class="header__push-title">{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endcapture %}
+
+<section class="page">
+  <div class="container">
+    <div class="inner">
+      <div class="page__content rte">
+        <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            </div>
+            {{ page.lookbooks.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'agr-2016-line':{{ pages.agr-2016-line.content | json }},'river-adventure':{{ pages.river-adventure.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http//shopifyexpert.com.au/lookbook/assets/templates/maxpedition.myshopify.com/mod_media_lightbox_list_e21ba.js?t=1478896197";
+    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+      </div>
+    </div>
+  </div>
+</section>

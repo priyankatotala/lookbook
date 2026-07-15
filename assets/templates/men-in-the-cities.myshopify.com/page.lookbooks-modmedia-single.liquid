@@ -1,0 +1,20 @@
+<div class="sixteen columns clearfix collection_nav">
+  <h1 class="collection_title">
+    {{ page.title }}
+  </h1>
+</div>
+
+<div class="sixteen columns page">
+    <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.content }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http://shopifyexpert.com.au/lookbook/assets/templates/men-in-the-cities.myshopify.com/mod_media_lightbox_c5b46{{ page.id }}.js?t=1403113413";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>

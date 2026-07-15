@@ -1,0 +1,39 @@
+{% section 'page-header' %}
+
+<div class="page-width {{ page.title | handleize }}">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+    {% if section.settings.bg_header_image == '' %}
+      <header>
+        <div class="section-header text-center">
+          <h1>{{ page.title }}</h1>
+        </div>
+      </header>
+    {% endif %}
+
+      <div class="rte">
+        <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/carve-designs.myshopify.com/mod_media_lightbox_1e7fc{{page.id}}.js?t=1678999613";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+      </div>
+      {% if page.title == 'Contact Carve Designs'%}
+        {% section 'feature-columns-contact' %}
+        {% section 'rich-text-contact' %}
+      {% endif %}
+      
+      {% if page.title == 'Careers' %}
+        {% section 'rich-text-careers' %}
+      {% endif %}
+
+    </div>
+  </div>
+</div>

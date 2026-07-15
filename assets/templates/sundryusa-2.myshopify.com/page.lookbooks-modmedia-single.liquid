@@ -1,0 +1,24 @@
+<a name="pagecontent" id="pagecontent"></a>
+
+<div class="sixteen columns page clearfix">
+  <h1>
+    {{ page.title }}
+  </h1>
+  <div class="feature_divider"></div>
+
+  <div>
+    {% render 'page-multi-column', content: page.content %}
+  </div>
+</div>
+<div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="single">
+            <div class="look-container"><div id="lookbook-modmedia-container">
+            </div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/sundryusa-2.myshopify.com/mod_media_lightbox_8e23b{{page.id}}.js?t=1698114882";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>

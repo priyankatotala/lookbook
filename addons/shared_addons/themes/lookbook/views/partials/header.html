@@ -1,0 +1,18 @@
+<div class="row">
+    <div id="site_info" class="col-md-3">
+        <a href='<?php echo site_url();?>'><div id="logo">{{ theme:image file="logo.png" alt="LookBook"}}</div></a>
+    </div>
+    <nav class="col-md-9">
+        <div id='main-menu'>
+            {{ navigation:links group="header" }}
+            <a href="{{ url }}" class="{{ class }} menu-item">{{ title }}</a>
+            {{ if children }}
+            {{ children }}
+            <a href="{{ url }}" class="{{ class }} menu-item">{{ title }}</a>
+            {{ /children }}
+            {{ endif }}
+            {{ /navigation:links }}
+            <?php if($this->session->userdata('shop')){ echo '<a href="https://'.$this->session->userdata('shop').'/admin" target="_blank" class="user_head_link">'.$this->session->userdata('shop').'</a>'.anchor('customers/logout','Log Out','class="logout"');} ?>
+        </div>        
+    </nav>
+</div>

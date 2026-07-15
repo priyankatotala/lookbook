@@ -1,0 +1,28 @@
+<div id="crumbs" class="sixteen columns">
+    <a href="/" title="Home">Home</a>
+    &raquo;
+    <a href="{{ page.url }}">{{ page.title }}</a>
+</div><!-- #crumbs -->
+
+{% if settings.show_social_page %}
+<div class="social floating">
+    <span class="label">{{ settings.text_sharethis }}</span>
+    {% include 'social-sharing' %}
+</div>
+{% endif %}
+
+<div class="sixteen columns">
+    <h1>{{ page.title }}</h1>
+    <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div><div class='lookbook-spe-content'>{% include 'process-html' with page.content %}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/cositab-dev.myshopify.com/mod_media_lightbox_404e4{{page.id}}.js?t=1441122255";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>

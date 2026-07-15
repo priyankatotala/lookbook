@@ -1,0 +1,33 @@
+<!-- /templates/page.liquid -->
+<section class="page page-top">
+  <div class="wrapper">
+    <header class="content-util">
+    {% include 'breadcrumb' %}
+    {% include 'social-icons' %}
+    </header>
+    <header class="page-header">
+      <h1>{{ page.title }}</h1>
+    </header>
+  </div>
+</section>
+
+<section class="page">
+  <div class="wrapper">
+    <div class="content-container rte">
+      <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'ultraviolet':{{ pages.ultraviolet.content | json }},'sunset':{{ pages.sunset.content | json }},'luminance':{{ pages.luminance.content | json }},'deconstruct':{{ pages.deconstruct.content | json }},'eclipse':{{ pages.eclipse.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/marz-lyfe.myshopify.com/mod_media_lightbox_list_3df46.js?t=1518134717";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+    </div>
+  </div>
+</section>

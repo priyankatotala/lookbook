@@ -1,0 +1,128 @@
+<div id="page" class="desktop-12 tablet-6 mobile-3">
+  <div id="page-content" class="desktop-9 tablet-4 mobile-3">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <div class="rte"><div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div>{{ page.content }}{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'lookbook':{{ pages.lookbook.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/maceoo-au.myshopify.com/mod_media_lightbox_list_a5851.js?t=1414794033";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>
+  </div>
+  
+  <div id="page-sidebar" class="desktop-3 tablet-2 mobile-3">
+    <h2>{{ settings.page-sidebar-title }}</h2>
+    <ul>
+      {% for link in linklists.[settings.pagelist].links %}
+      <li>{{ link.title | link_to: link.url }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<script async="async" type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.form-n-validate.js"></script>
+<script type="text/javascript">
+	setTimeout('mce_preload_check();', 250);
+var mce_preload_checks = 0;
+function mce_preload_check(){
+    if (mce_preload_checks>40) return;
+    mce_preload_checks++;
+    try {
+        var validatorLoaded=jQuery("#fake-form").validate({});
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    mce_init_form();
+}
+function mce_init_form(){
+    jQuery(document).ready( function($) {
+      //if(!$('html').hasClass('ie')) { 
+        var submitURL = $('#mc-embedded-subscribe-form').attr('action'); 
+        submitURL = submitURL.replace('post', 'post-json'); 
+        submitURL = submitURL + '&c=?'; 
+        
+        var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+        var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+        $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+        options = { url: submitURL, type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+                      beforeSubmit: function(){
+                          $('#mce_tmp_error_msg').remove();
+                          return mce_validator.form();
+                      }, 
+                      success: mce_success_cb
+                  };
+        $('#mc-embedded-subscribe-form').ajaxForm(options);
+     // }
+   });
+}
+function mce_success_cb(resp){
+    $('#mce-success-response').hide();
+    $('#mce-error-response').hide();
+    if (resp.result=="success"){
+		alert("dfds");
+        $('#mce-'+resp.result+'-response').show();
+        $('#mce-'+resp.result+'-response').html('Thanks for signing up! You will receive an email from us shortly.');
+        $('#mc-embedded-subscribe-form').each(function(){
+            this.reset();
+    	});
+    } else {
+        var index = -1;
+        var msg;
+        try {
+            var parts = resp.msg.split(' - ',2);
+            if (parts[1]==undefined){
+                msg = resp.msg;
+            } else {
+                i = parseInt(parts[0]);
+                if (i.toString() == parts[0]){
+                    index = parts[0];
+                    msg = parts[1];
+                } else {
+                    index = -1;
+                    msg = resp.msg;
+                }
+            }
+        } catch(e){
+            index = -1;
+            msg = resp.msg;
+        }
+        try{
+            if (index== -1){
+                $('#mce-'+resp.result+'-response').show();
+                $('#mce-'+resp.result+'-response').html(msg);            
+            } else {
+                err_id = 'mce_tmp_error_msg';
+                html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+            }
+        } catch(e){
+            $('#mce-'+resp.result+'-response').show().html(msg);
+        }
+    }
+}
+
+</script>
+<nav class="newsletter">
+                <h4>Receive Bonavito &amp; Co. Exclusive Offers &amp; Discounts</h4>
+                <div class="newsletter-signup">
+                  	<div id="mc_embed_signup">
+                      <form action="http://bonavitoandco.us8.list-manage1.com/subscribe/post?u=13c9989c66569b019d1896fd8&amp;id=36fb581456" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                          <div class="mc-field-group">
+                              <input type="email" value="" name="EMAIL" class="required email email_update" id="mce-EMAIL" placeholder="Enter email address">
+                              <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="btn">
+                          </div>
+                          <div id="mce-responses" class="clear">
+                              <div class="response" id="mce-error-response" style="display:none"></div>
+                              <div class="response" id="mce-success-response" style="display:none"></div>
+                          </div>
+                      </form>
+                    </div>
+				</div>
+			</nav>

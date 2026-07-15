@@ -1,0 +1,206 @@
+{% include '_locale' %}
+
+<div class="ambiance">
+    <div class="ambiance--wrapper">
+        <div class="ambiance__back">
+            <a class="button" data-text="Back" href="/pages/ambiances">
+                <i class="icon-arrow-left"></i>
+                {{ 'ambiances.back' | prepend: lang_var | t }}
+            </a>
+        </div>
+        <div class="ambiance__image">
+
+            <div id="modmedia-lookbooks" class="banner-slider-wrapper single">
+
+                <div id="lookbook-modmedia-container">
+                </div>
+
+            </div>
+
+        </div>
+        <div id="ambiance-product" class="ambiance__product" data-blur-close="true">
+            <a class="ambiance__product--image">
+                <img src="//placehold.it/300x300" alt="">
+            </a>
+            <a href="#">
+                <h1 class="ambiance__product--title light">Product title <br /> Collection</h1>
+            </a>
+
+            <p class="ambiance__product--price"><span class="number">$3000</span></p>
+
+            <div class="ambiance__product--add-to-cart">
+                <input type="submit" class="light" value="{{ 'product.product-actions.add-to-cart-button-text' | prepend: lang_var | t }}">
+            </div>
+
+            <h5 class="ambiance__product--reference">{{ 'product.product-info.product-code-label-text' | prepend: lang_var | t }} <span class="number">AA123456</span></h5>
+
+            <div class="ambiance__product--variants">
+                <div class="input-wrapper">
+                    <select name="dimensions" class="light">
+                        <option value="Dimensions">Dimensions</option>
+                    </select>
+                    <i class="icon-arrow-down"></i>
+                </div>
+                <div class="input-wrapper">
+                    <select name="finish" class="light">
+                        <option value="Finish">Finish</option>
+                    </select>
+                    <i class="icon-arrow-down"></i>
+                </div>
+                <div class="product__options--non-existant error">{{ 'product.product-info.requested-choice-non-existant-error-text' | prepend: lang_var | t }}
+            </div>
+
+            <div class="ambiance__product--link">
+                <a href="" class="">
+                    More Information
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</div><!--Extra closing div due to bad HTML coming from Lookbook app --></div>
+
+{% include 'template-ambiance-product' %}
+
+<script type="text/javascript">
+    {% if shop.metafields.country.iso_code == 'CA' %}
+        {% assign ambiance_script_id = '9e0dc' %}
+    {% elsif shop.metafields.country.iso_code == 'US' %}
+        {% assign ambiance_script_id = 'e9989' %}
+    {% else %}
+        {% assign ambiance_script_id = 'e9c4e' %}
+    {% endif %}
+
+    // Load Lookbook
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/{{shop.permanent_domain}}/mod_media_lightbox_{{ambiance_script_id}}{{page.id}}.js?t={{theme.id}}";
+    document.getElementsByTagName("head")[0].appendChild(s);
+
+    var product;
+
+    $(function(){
+
+        var checkDOMChange = function checkDOMChange(){
+            // check if lookbook is loaded
+            if($('#lookbook-modmedia-container ul').length){
+                // Make the second product circle always animate
+                $('[id^="pin-"][id$="-2"]').addClass('hover-always');
+
+                productQuickView();
+                return false;
+            }
+
+            // call the function again after 100 milliseconds
+            setTimeout( checkDOMChange, 100 );
+        }
+
+        checkDOMChange();
+    });
+
+    function productQuickView(){
+
+        // Show Product info on sidebar
+        $('.lookbook-item a').click(function(event){
+            if ($(window).width() > theme.breakpoints.sm) {
+                // This prevents the app from redirecting to the PDP
+                // This also prevents the auto-closing of other open elements
+                event.preventDefault();
+                event.stopPropagation();
+                event.stopImmediatePropagation();
+
+                var productUrl = $(this).attr('href') + '.js';
+
+                $.get(productUrl, null, undefined, 'json').then(function(data){
+
+                    product = data;
+
+                    var variant = firstAvailableVariant(product);
+
+                    updateQuickView(product, variant);
+                });
+            }
+        });
+    }
+
+    function firstAvailableVariant(product){
+        var variant = product.variants[0];
+
+        for(var i = 0; i < product.variants.length; i++){
+            if(product.variants[i].available) {
+                variant = product.variants[i];
+                break;
+            }
+        }
+
+        return variant;
+    }
+
+    function updateQuickView(product, variant){
+
+        var options = product.options;
+
+        // Create Option Handle
+        for(var i = 0; i < options.length; i++){
+            var option = options[i];
+            option.handle = option.name.toLowerCase().replace(/[^\w\u00C0-\u024f]+/g, "-").replace(/^-+|-+$/g, "");
+
+            // Create Value Handle and flag selected variant option value key/pair
+            for(var j = 0; j < option.values.length; j++){
+                option.values[j] = { name: option.values[j] };
+                option.values[j].handle = option.values[j].name.toLowerCase().replace(/[^\w\u00C0-\u024f]+/g, "-").replace(/^-+|-+$/g, "");
+            }
+        }
+
+        // Resize images
+        product.featured_image = imgUrl(product.featured_image, 'medium');
+        variant.featured_image.src = imgUrl(variant.featured_image.src, 'medium');
+        
+        // Add compare at Price
+        if(variant.compare_at_price > variant.price){
+            variant.rebate_price = variant.compare_at_price;
+        }
+
+        // Parse template
+        var customTags = [ '[[', ']]' ];
+        var template = $('#template-ambiance-product').html();
+        Mustache.parse(template, customTags);
+        var $productContainer = $('.ambiance__product').first();
+        var rendered = Mustache.render(template, {
+            product: product, 
+            options: options, 
+            variant: variant, 
+            price: money(variant.price),
+            rebate_price: money(variant.rebate_price)
+        });
+        $productContainer.html(rendered);
+
+        // Select the appropriate options once loaded. Mustache doesn't support this
+        $('[data-option] select [value="' + variant.option1 + '"]').prop('selected', true);
+        $('[data-option] select [value="' + variant.option2 + '"]').prop('selected', true);
+
+        $('html.no-touchevents .ambiance__product').addClass('open');
+        $('html.no-touchevents .ambiance').addClass('ambiance--quick-view');
+
+    }
+
+        // Show Product info on sidebar
+        $(document).on('close', '#ambiance-product', function(e) {
+            $('html.no-touchevents .ambiance__product').removeClass('open');
+            $('html.no-touchevents .ambiance').removeClass('ambiance--quick-view');
+        });
+
+</script><div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="single">
+            <div class="look-container"><div id="lookbook-modmedia-container">
+            </div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/artemano-usa.myshopify.com/mod_media_lightbox_e9989{{page.id}}.js?t=1502298678";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>

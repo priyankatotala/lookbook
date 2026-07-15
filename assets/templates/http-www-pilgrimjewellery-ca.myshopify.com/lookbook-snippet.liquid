@@ -1,0 +1,40 @@
+
+  <div class="section-title desktop-12 mobile-3">
+    <h1>{{ page.title }}</h1>
+  </div>
+
+  <div class="{% if settings.pagelist == '' %}desktop-12 mobile-3{% else %}desktop-9 mobile-3{% endif %}">
+    <div class="rte">
+      <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.summer.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/http-www-pilgrimjewellery-ca.myshopify.com/mod_media_lightbox_c9b8b7928643637.js?t=1531720988";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+    </div>
+  </div>
+
+  {% if settings.pagelist != '' %}
+    <div id="page-sidebar" class="desktop-3 tablet-2 mobile-3">
+      <h2>{{ settings.page-sidebar-title }}</h2>
+      <ul>
+        {% for link in linklists[settings.pagelist].links %}
+          <li>{{ link.title | link_to: link.url }}</li>
+        {% endfor %}
+      </ul>
+
+      {% if settings.pagelist == '' %}
+        <p>You are seeing this message as you have yet to pick a linklist in the Pages and contact form section of the theme settings</p>
+        <p>In your admin click on Themes > Customize Theme > Pages and Contact form and choose a Linklist from the dropdown in the area marked Choose a linklist for page sidebar</p>
+      {% endif %}
+
+    </div>
+  {% endif %}

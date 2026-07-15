@@ -1,0 +1,30 @@
+<div id="page" class="{% if section.settings.show-narrow-page %}desktop-8 desktop-push-2{% else %}desktop-12{% endif %} tablet-6 mobile-3" data-section-id="{{ section.id }}" data-section-type="page-section">
+  <div id="page-content"{% if linklists[section.settings.pagelist] != blank %} class="desktop-9 tablet-4 mobile-3{% endif %}">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <div class="rte"><div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.fall-winter-16-17.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/andrea-wazen.myshopify.com/mod_media_lightbox_9a743254885188.js?t=1490745444";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>
+  </div>
+   
+  {% if linklists[section.settings.pagelist] != blank %}
+  <div id="page-sidebar" class="desktop-3 tablet-2 mobile-3">
+    <h2>{{ section.settings.page-sidebar-title }}</h2>
+    <ul>
+      {% for link in linklists[section.settings.pagelist].links %}
+      <li>{{ link.title | link_to: link.url }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>

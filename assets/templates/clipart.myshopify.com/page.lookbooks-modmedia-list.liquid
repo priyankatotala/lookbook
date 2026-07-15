@@ -1,0 +1,25 @@
+<h1 id="page-title">{{page.title}}</h1>
+
+<div class="page-with-sub clearfix">
+   <div class="page-main">
+      <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'test':{{ pages.test.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/clipart.myshopify.com/mod_media_lightbox_list_fb773.js?t=1435874881";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+   </div>  
+   
+   <div class="page-sub">
+      {% include 'page-sidebar' %}
+   </div>    
+</div>
+  

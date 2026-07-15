@@ -1,0 +1,20 @@
+<div id="page" class="row">
+  
+  <div class="span12 details">
+    <h1 class="p25">{{ page.title }}</h1>
+    <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            </div>
+            {{ page.lookbooks.content }}
+</div>
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'all-about-madcs':{{ pages.all-about-madcs.content | json }},'madcs-kids-winter-adventure-wear':{{ pages.madcs-kids-winter-adventure-wear.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/madcs.myshopify.com/mod_media_lightbox_list_7a451.js?t=1426129360";
+    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+  </div>
+  
+</div>

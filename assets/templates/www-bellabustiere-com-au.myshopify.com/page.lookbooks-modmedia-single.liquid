@@ -1,0 +1,27 @@
+<div id="page" class="desktop-12 tablet-6 mobile-3">
+  <div id="page-content" class="desktop-9 tablet-4 mobile-3">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <div class="rte"><div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.content }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/www-bellabustiere-com-au.myshopify.com/mod_media_lightbox_772b0{{ page.id }}.js?t=1405515598";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>
+  </div>
+  
+  <div id="page-sidebar" class="desktop-3 tablet-2 mobile-3">
+    <h2>{{ settings.page-sidebar-title }}</h2>
+    <ul>
+      {% for link in linklists.[settings.pagelist].links %}
+      <li><i class="icon-arrow-right"></i>{{ link.title | link_to: link.url }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+

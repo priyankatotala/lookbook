@@ -1,0 +1,17 @@
+<div id="page" class="desktop-12 tablet-6 mobile-3">
+    <h1>{{ page.title }}</h1>
+  <div class="rte"><div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div>
+{{ page.content }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'1':{{ pages.1.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/hautejulytest.myshopify.com/mod_media_lightbox_list_15cc0.js?t=1413480331";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>
+</div>

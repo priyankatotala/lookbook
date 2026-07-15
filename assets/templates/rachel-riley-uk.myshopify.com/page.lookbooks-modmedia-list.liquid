@@ -1,0 +1,24 @@
+<div class="Container">
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  <div class="PageContent">
+    <div id="modmedia-lookbooks" class="list">
+                            <div id="lookbook-modmedia-container">
+                            Loading...
+                            </div>
+                </div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+                {{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+                <script type="text/javascript">
+                var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+                var pages_content = {'nautical-edit-2026':{{ pages.nautical-edit-2026.content | json }},'easter-2026-lookbook':{{ pages.easter-2026-lookbook.content | json }},'special-occasions-2026':{{ pages.special-occasions-2026.content | json }},'pastel-collection-lookbook-2026':{{ pages.pastel-collection-lookbook-2026.content | json }},'resort-lookbook-2026':{{ pages.resort-lookbook-2026.content | json }},'little-sweetheart-collection-2026':{{ pages.little-sweetheart-collection-2026.content | json }},'ss22-personalisation-lookbook':{{ pages.ss22-personalisation-lookbook.content | json }},'rachel-riley-anabelle-karmel-lookbook':{{ pages.rachel-riley-anabelle-karmel-lookbook.content | json }},'outerwear-2025-lookbook':{{ pages.outerwear-2025-lookbook.content | json }},'christmas-2025':{{ pages.christmas-2025.content | json }},'cosy-knitwear-collection-2025-lookbook':{{ pages.cosy-knitwear-collection-2025-lookbook.content | json }},'pumpkin-patch-halloween-dress-up-lookbook':{{ pages.pumpkin-patch-halloween-dress-up-lookbook.content | json }},'partywear-edit-2025-lookbook':{{ pages.partywear-edit-2025-lookbook.content | json }},'back-to-school-2025-look-book':{{ pages.back-to-school-2025-look-book.content | json }},'special-occasions-2025':{{ pages.special-occasions-2025.content | json }},'special-occasions-2024':{{ pages.special-occasions-2024.content | json }}};
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.src = "https://modapps2.com.au/lookbook/assets/templates/rachel-riley-uk.myshopify.com/mod_media_lightbox_list_44a92.js?t=1774607338";
+                    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+  </div>
+</div>

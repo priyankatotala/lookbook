@@ -1,0 +1,20 @@
+<div class="sixteen columns clearfix collection_nav">
+  <h1 class="collection_title">
+    {{ page.title }}
+  </h1>
+  <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.introducing-r13-culture-countered.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/dwndclothing.myshopify.com/mod_media_lightbox_de8e115442018347.js?t=1519349721";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>
+

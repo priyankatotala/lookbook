@@ -1,0 +1,34 @@
+{% include 'breadcrumb' %}
+<header class="page-header">
+  {% if settings.enable_multilang %}
+  <h2 class="lang1">{{ page.title | split: '|' | first }}</h2>
+  <h2 class="lang2">{{ page.title | split: '|' | last }}</h2>
+  {% else %}
+  <h2>{{ page.title | split: '|' | first }}</h2>
+  {% endif %}
+</header>
+
+{% comment %}
+  Regular page content goes here.
+{% endcomment %}
+
+{% if settings.enable_multilang %}
+<div class="rte lang1">{{ page.content | split: '[lang2]' | first }}</div>
+<div class="rte lang2">{{ page.content | split: '[lang2]' | last }}</div>
+{% else %}
+<div class="rte">{{ page.content | split: '[lang2]' | first }}</div>
+{% endif %}
+<div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="list">
+            <div class="look-container"><div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'get-the-look-highland-fling':{{ pages.get-the-look-highland-fling.content | json }},'get-the-look-luxe-collection':{{ pages.get-the-look-luxe-collection.content | json }},'get-the-look-blush-gold':{{ pages.get-the-look-blush-gold.content | json }},'christmas-2018':{{ pages.christmas-2018.content | json }},'get-the-look-bohemian-summer':{{ pages.get-the-look-bohemian-summer.content | json }},'silvers-greys':{{ pages.silvers-greys.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/ideal-textiles.myshopify.com/mod_media_lightbox_list_85be5.js?t=1541601884";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>

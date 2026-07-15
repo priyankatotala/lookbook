@@ -1,0 +1,24 @@
+{% capture captured_page %}
+<div class="container cf">
+  <div class="page-header cf">
+    <h1 class="majortitle">{{ page.title }}</h1>
+  </div>
+  <div class="user-content row-spacing">
+    <div id="modmedia-lookbooks" class="list">
+                            <div id="lookbook-modmedia-container">
+                            Loading...
+                            </div>
+                </div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+                {{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+                <script type="text/javascript">
+                var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+                var pages_content = {'2026-summer-autumn-collection':{{ pages.2026-summer-autumn-collection.content | json }},'2026-accessories-collection':{{ pages.2026-accessories-collection.content | json }},'2026-spring-collection':{{ pages.2026-spring-collection.content | json }},'2025-winter-collection':{{ pages.2025-winter-collection.content | json }},'2025-dead-kennedys-collabolation':{{ pages.2025-dead-kennedys-collabolation.content | json }},'2025-summer-autumn-lookbook':{{ pages.2025-summer-autumn-lookbook.content | json }},'cluct-2025-spring-collection':{{ pages.cluct-2025-spring-collection.content | json }},'cluct-x-first-down':{{ pages.cluct-x-first-down.content | json }},'2024-winter-collection':{{ pages.2024-winter-collection.content | json }},'2024-summer-autumn-collection':{{ pages.2024-summer-autumn-collection.content | json }},'cluct-x-duncan-lemmon':{{ pages.cluct-x-duncan-lemmon.content | json }},'2023-winter-collection':{{ pages.2023-winter-collection.content | json }},'2023-su':{{ pages.2023-su.content | json }},'2023-spring-collection':{{ pages.2023-spring-collection.content | json }}};
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.src = "https://modapps2.com.au/lookbook/assets/templates/cluct-official.myshopify.com/mod_media_lightbox_list_5742d.js?t=1779959651";
+                    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+  </div>
+</div>
+{% endcapture %}
+{% include 'password-protect' %}

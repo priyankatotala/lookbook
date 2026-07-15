@@ -1,0 +1,29 @@
+<div class="page-head pr tc{%- if settings.other_page_bg_image != blank %} page_jas_bg_image lazyload{%- endif -%}"{%- if settings.other_page_bg_image != blank %} data-bgset="{%- include 'bgset', image: settings.other_page_bg_image -%}" data-sizes="auto" data-parent-fit="cover" style="background-image: url({{ settings.other_page_bg_image | img_url: '50x50' }});"{%- endif -%}>
+   <div class="jas-container pr">
+      <h1 class="tu mb__10 cw">{{ page.title }}</h1>
+      {% comment %}<ul class="jas-breadcrumb dib oh">
+         <li class="fl home"><a href="/" title="{{ 'general.breadcrumbs.home' | t }}">{{ 'general.breadcrumbs.home' | t }}</a></li>
+         <li class="fl separator"> <i class="fa fa-angle-right"></i> </li>
+         <li class="fl current"> {{page.title }}</li>
+      </ul>{% endcomment %}
+   </div>
+</div>
+<div class="jas-row jas-page">
+  <div class="jas-col-md-12 jas-col-xs-12 mt__60 mb__60" role="main" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+       <div class="jas-container">
+         {%- include 'shortcode' load: page.content -%}
+       </div>
+  </div>
+</div>
+<div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="single">
+            <div class="look-container"><div id="lookbook-modmedia-container">
+            </div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/zui-sa.myshopify.com/mod_media_lightbox_516db{{page.id}}.js?t=1526328536";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>

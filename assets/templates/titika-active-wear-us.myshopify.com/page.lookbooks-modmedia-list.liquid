@@ -1,0 +1,47 @@
+<style>
+.page-banner{fill: #CCC; font-family: 'Poppins', sans-serif; font-size: 72px; letter-spacing: 10; text-transform: uppercase;text-align:center}
+.page-heading{margin: 0 0 0 0; font-size: 1.3em; border: 0px solid grey; padding: 10px; text-align:center}
+.page-heading a{color:#ccc;text-transform:uppercase}
+.page-heading a:hover{color:#000}
+.section-title{display:none}
+.rte{padding-top: 40px!important}
+</style>
+<div class="section-title desktop-12 mobile-3">
+  <h1>{{ page.title }}</h1>
+</div>
+
+<div class="{% if settings.pagelist == '' %}desktop-12 tablet-6 mobile-3{% else %}desktop-9 tablet-4 mobile-3{% endif %}">
+  <div class="rte"><div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'reflect':{{ pages.reflect.content | json }},'light-and-lines':{{ pages.light-and-lines.content | json }},'pivillion':{{ pages.pivillion.content | json }},'skate-park':{{ pages.skate-park.content | json }},'glam-active':{{ pages.glam-active.content | json }},'arena':{{ pages.arena.content | json }},'rooftop':{{ pages.rooftop.content | json }},'downtown':{{ pages.downtown.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/titika-active-wear-us.myshopify.com/mod_media_lightbox_list_30169.js?t=1514889596";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>
+</div>
+
+{% if settings.pagelist != '' %}
+<div id="page-sidebar" class="desktop-3 tablet-2 mobile-3">
+  <h2>{{ settings.page-sidebar-title }}</h2>
+  <ul>
+    {% for link in linklists[settings.pagelist].links %}
+    <li>{{ link.title | link_to: link.url }}</li>
+    {% endfor %}
+  </ul>
+
+  {% if settings.pagelist == '' %}
+  <p>You are seeing this message as you have yet to pick a linklist in the Pages and contact form section of the theme settings</p>
+  <p>In your admin click on Themes > Customize Theme > Pages and Contact form and choose a Linklist from the dropdown in the area marked Choose a linklist for page sidebar</p> 
+  {% endif %}  
+
+</div>
+{% endif %}
+
+

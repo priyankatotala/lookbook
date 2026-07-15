@@ -1,0 +1,26 @@
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      <div class="rte">
+        <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'apptest_warder-1':{{ pages.apptest_warder-1.content | json }},'add-2':{{ pages.add-2.content | json }},'add3':{{ pages.add3.content | json }},'add4':{{ pages.add4.content | json }},'add5':{{ pages.add5.content | json }},'add6':{{ pages.add6.content | json }},'add7':{{ pages.add7.content | json }},'add8':{{ pages.add8.content | json }},'add9':{{ pages.add9.content | json }},'add10':{{ pages.add10.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/apptest-yashellowork.myshopify.com/mod_media_lightbox_list_37b06.js?t=1606195489";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+      </div>
+    </div>
+  </div>
+</div>

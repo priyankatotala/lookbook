@@ -1,0 +1,20 @@
+{% assign has_sidebar = false %}
+{% assign has_crumbs = true %}
+{% include 'settings' %}
+{% include 'page-header' with page.title %}
+{% include 'content-wrap-open' %}
+{% include 'content-open' %}
+<div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.content }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/zurizuribyflora.myshopify.com/mod_media_lightbox_a46ef{{ page.id }}.js?t=1412693747";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+{% include 'content-close' %}
+{% include 'content-wrap-close' %}

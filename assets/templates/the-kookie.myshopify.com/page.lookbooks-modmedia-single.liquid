@@ -1,0 +1,29 @@
+<div id="page" class="row">
+  
+  <div class="span12 details">
+    <h1 class="p25">{{ page.title }}</h1>
+    <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.content }}
+</div>
+<script type="text/javascript">
+var modlookbook_exist=false;
+  var modlookbook_url = 'http://shopifyexpert.com.au/lookbook/assets/templates/the-kookie.myshopify.com/mod_media_lightbox_60795{{ page.id }}.js?t=1399345171';
+    var modlookbook_scripts = document.getElementsByTagName('script');
+    for (var i = modlookbook_scripts.length; i--;) {
+      if (modlookbook_scripts[i].src == modlookbook_url){
+        modlookbook_exist=true;
+      };
+    }
+  if(!modlookbook_exist){
+    Shopify.money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http://shopifyexpert.com.au/lookbook/assets/templates/the-kookie.myshopify.com/mod_media_lightbox_60795{{ page.id }}.js?t=1399345171";
+    document.getElementsByTagName("head")[0].appendChild(s);
+    }
+</script>
+  </div>
+  
+</div>

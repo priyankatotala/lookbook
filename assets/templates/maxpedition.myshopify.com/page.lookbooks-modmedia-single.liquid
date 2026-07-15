@@ -1,0 +1,34 @@
+{% capture push_header %}
+  <div class="header__push">
+    <div class="container">
+      <div class="inner">
+        {% include 'breadcrumb' %}
+
+        <div class="header__push-content">
+          <h1 class="header__push-title">{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endcapture %}
+
+<section class="page">
+  <div class="container">
+    <div class="inner">
+      <div class="page__content rte">
+        <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/maxpedition.myshopify.com/mod_media_lightbox_e21ba{{page.id}}.js?t=1608665911";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+      </div>
+    </div>
+  </div>
+</section>

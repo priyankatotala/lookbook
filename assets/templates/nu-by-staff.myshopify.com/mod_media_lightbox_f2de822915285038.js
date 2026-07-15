@@ -1,0 +1,763 @@
+if(typeof myAppJavaScriptmodLookbook != "function"){
+var myAppJavaScriptmodLookbook = function($) {
+var pages = [    
+        {
+        page: '1',
+        image: {"file_name":"lookbook-modmedia-6112-page-64621.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/0928\/9810\/t\/14\/assets\/lookbook-modmedia-6112-page-64621.jpg?865317685209186254","image_width":500,"image_height":680,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:396.00,
+                left:293.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Soft_pullover-Knit-10129-61W-510_Primrose_yellow.jpg?v=1548320587",
+                handle: "10129-61w-soft-pullover-knit-primrose-yellow"
+                }
+                ,                {
+                item:2,
+                top:618.00,
+                left:122.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Leopard_tunic-Tunic-10104-50W-250_Tobacco_mix.jpg?v=1548357317",
+                handle: "10104-50w-leopard-tunic-tunic-tobacco-mix"
+                }
+                        ]}
+        ,        {
+        page: '2',
+        image: {"file_name":"lookbook-modmedia-6112-page-64622.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/0928\/9810\/t\/14\/assets\/lookbook-modmedia-6112-page-64622.jpg?17511024335324608369","image_width":500,"image_height":680,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:381.00,
+                left:249.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Long_shirt_with_stripe-Shirts-10114-40W-110_Creme.jpg?v=1548320567",
+                handle: "10114-40w-long-shirt-with-stripe-shirts-creme"
+                }
+                        ]}
+        ,        {
+        page: '3',
+        image: {"file_name":"lookbook-modmedia-6112-page-64624.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/0928\/9810\/t\/14\/assets\/lookbook-modmedia-6112-page-64624.jpg?17044704299145408842","image_width":500,"image_height":680,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:396.00,
+                left:249.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Knitted_dress-Dresses-10107-23W-Black.jpg?v=1548320546",
+                handle: "10107-23w-knitted-dress-dresses-black"
+                }
+                        ]}
+        ,        {
+        page: '4',
+        image: {"file_name":"lookbook-modmedia-6112-page-64625.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/0928\/9810\/t\/14\/assets\/lookbook-modmedia-6112-page-64625.jpg?2591530611417442129","image_width":500,"image_height":680,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:355.00,
+                left:304.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Leopard_shirt-Shirts-10104-52W-250_Tobacco_mix.jpg?v=1548320533",
+                handle: "10104-52w-leopard-shirt-shirts-tobacco-mix"
+                }
+                ,                {
+                item:2,
+                top:565.00,
+                left:253.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Leopard_skirt-Skirts-10104-20W-250_Tobacco_mix.jpg?v=1549231520",
+                handle: "10104-20w-leopard-skirt-skirts-tobacco-mix"
+                }
+                        ]}
+        ,        {
+        page: '5',
+        image: {"file_name":"lookbook-0ab3052318d72507bdc18f3f3ae8c43344cffb79.jpg","file_type":"image\/jpeg","file_path":"\/var\/www\/vhosts\/modapps2.com.au\/httpdocs\/lookbook\/uploads\/lookbooks\/nu-by-staff-no.myshopify.com\/","full_path":"\/var\/www\/vhosts\/modapps2.com.au\/httpdocs\/lookbook\/uploads\/lookbooks\/nu-by-staff-no.myshopify.com\/lookbook-0ab3052318d72507bdc18f3f3ae8c43344cffb79.jpg","raw_name":"lookbook-0ab3052318d72507bdc18f3f3ae8c43344cffb79","orig_name":"lookbook-0ab3052318d72507bdc18f3f3ae8c43344cffb79.jpg","client_name":"101xx Luxery S19 stor Webknap - 500x680_72dpi_21.jpg","file_ext":".jpg","file_size":219.47,"is_image":true,"image_width":500,"image_height":680,"image_type":"jpeg","image_size_str":"width=\"500\" height=\"680\""},
+        products: [
+                        {
+                item:1,
+                top:348.00,
+                left:264.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Black_blouse_with_open_sleeves-Blouses-10105-57W-Black.jpg?v=1549020150",
+                handle: "10105-57w-black-blouse-with-open-sleeves-blouses-black"
+                }
+                ,                {
+                item:2,
+                top:601.00,
+                left:252.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Trousers_with_tapes-Pants-10123-10W-250_Tobacco.jpg?v=1549268333",
+                handle: "10123-10w-trousers-with-tapes-pants-tobacco"
+                }
+                        ]}
+        ,        {
+        page: '6',
+        image: {"file_name":"lookbook-modmedia-6112-page-64627.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/0928\/9810\/t\/14\/assets\/lookbook-modmedia-6112-page-64627.jpg?8017687042667448056","image_width":500,"image_height":680,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:287.00,
+                left:302.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/High_necked_blouse-Blouses-10122-50W-110_Creme.jpg?v=1549268325",
+                handle: "10122-50w-high-necked-blouse-blouses-creme"
+                }
+                ,                {
+                item:2,
+                top:552.00,
+                left:317.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Leggings_with_deco_stitches-Pants-10111-12W-Black.jpg?v=1549199842",
+                handle: "10111-12w-leggings-with-deco-stitches-pants-black"
+                }
+                        ]}
+        ,        {
+        page: '7',
+        image: {"file_name":"lookbook-modmedia-6112-page-64628.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/0928\/9810\/t\/14\/assets\/lookbook-modmedia-6112-page-64628.jpg?11698504962171236398","image_width":500,"image_height":680,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:460.00,
+                left:241.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Blazer_with_tapes-Jackets-10102-35W-250_Tobacco.jpg?v=1548320493",
+                handle: "10102-35w-blazer-with-tapes-jackets-tobacco"
+                }
+                ,                {
+                item:2,
+                top:431.00,
+                left:329.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Ruffle_dress-Dresses-10112-23W-510_Primrose_yellow.jpg?v=1549268128",
+                handle: "10112-23w-ruffle-dress-dresses-primrose-yellow"
+                }
+                        ]}
+        ,        {
+        page: '8',
+        image: {"file_name":"lookbook-modmedia-6112-page-64629.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/0928\/9810\/t\/14\/assets\/lookbook-modmedia-6112-page-64629.jpg?4476569636817344926","image_width":500,"image_height":680,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:369.00,
+                left:200.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Sweatpants-Pants-10132-10W-110_Creme.jpg?v=1548846212",
+                handle: "10132-10w-sweatpants-pants-creme"
+                }
+                ,                {
+                item:2,
+                top:248.00,
+                left:242.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Elegant_top_with_zippers-Tops_T-shirts-10132-50W-110_Creme.jpg?v=1548846205",
+                handle: "10132-50w-elegant-top-with-zippers-tops-t-shirts-creme"
+                }
+                        ]}
+        ,        {
+        page: '9',
+        image: {"file_name":"lookbook-modmedia-6112-page-64630.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/0928\/9810\/t\/14\/assets\/lookbook-modmedia-6112-page-64630.jpg?7275352654886806571","image_width":500,"image_height":680,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:480.00,
+                left:146.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Top_with_tie-string-Tops_T-shirts-10127-53W-590_Marsala.jpg?v=1549268367",
+                handle: "10127-53w-top-with-tie-string-tops-t-shirts-marsala"
+                }
+                ,                {
+                item:2,
+                top:577.00,
+                left:253.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Sweatpants-Pants-10132-10W-110_Creme.jpg?v=1548846212",
+                handle: "10132-10w-sweatpants-pants-creme"
+                }
+                        ]}
+        ,        {
+        page: '10',
+        image: {"file_name":"lookbook-modmedia-6112-page-64631.jpg","full_path":"https:\/\/cdn.shopify.com\/s\/files\/1\/0928\/9810\/t\/14\/assets\/lookbook-modmedia-6112-page-64631.jpg?9094000355060814839","image_width":500,"image_height":680,"file_ext":".jpg"},
+        products: [
+                        {
+                item:1,
+                top:386.00,
+                left:187.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Sweatblouse_Luxury-Blouses-10102-50W-250_Tobacco.jpg?v=1549025843",
+                handle: "10102-50w-sweatblouse-luxury-blouses-tobacco"
+                }
+                ,                {
+                item:2,
+                top:592.00,
+                left:214.00,
+                link_target:'_self',
+                linkto:1,
+                url:"",
+                custom_title:"",
+                show_image:"1",
+                show_title:"1",
+                show_price:"1",
+                icon:"https://cdn.shopify.com/s/files/1/0928/9810/t/5/assets/lb_mm_circle_0000_2552552550.png?1559752139505274259",
+                icon_width: "26",
+                icon_height: "26",
+                image: "https://cdn.shopify.com/s/files/1/0928/9810/products/Leopard_skirt-Skirts-10104-20W-250_Tobacco_mix.jpg?v=1549231520",
+                handle: "10104-20w-leopard-skirt-skirts-tobacco-mix"
+                }
+                        ]}
+        ];
+var css = "#lookbook-modmedia-6112 .fflex-control-paging li a { } #lookbook-modmedia-6112 .fflex-control-paging li a:hover {} #lookbook-modmedia-6112 .fflex-control-paging li a.fflex-active {}";
+var style = document.createElement('style');
+
+style.type = 'text/css';
+if (style.styleSheet){
+style.styleSheet.cssText = css;
+} else {
+style.appendChild(document.createTextNode(css));
+}
+document.getElementsByTagName("head")[0].appendChild(style);
+
+if((typeof Shopify) == 'undefined'){
+if ((typeof Shopify) == 'undefined') {
+var Shopify = {};
+}
+/* ---------------------------------------------------------------------------
+* Money format handler single/slideshow
+* ---------------------------------------------------------------------------*/
+Shopify.money_format = "$ {{amount}}";
+Shopify.formatMoney = function(cents, format) {
+if (typeof cents == 'string') cents = cents.replace('.','');
+var value = '';
+var patt = /\{\{\s*(\w+)\s*\}\}/;
+var formatString = (format || this.money_format);
+
+function addCommas(moneyString) {
+return moneyString.replace(/(\d+)(\d{3}[\.,]?)/,'$1,$2');
+}
+
+switch(formatString.match(patt)[1]) {
+case 'amount':
+value = addCommas(floatToString(cents/100.0, 2));
+break;
+case 'amount_no_decimals':
+value = addCommas(floatToString(cents/100.0, 0));
+break;
+case 'amount_with_comma_separator':
+value = floatToString(cents/100.0, 2).replace(/\./, ',');
+break;
+case 'amount_no_decimals_with_comma_separator':
+value = addCommas(floatToString(cents/100.0, 0)).replace(/\./, ',');
+break;
+}
+return formatString.replace(patt, value);
+};
+
+function floatToString(numeric, decimals) {  
+var amount = numeric.toFixed(decimals).toString();  
+if(amount.match(/^\.\d+/)) {return "0"+amount; }
+else { return amount; }
+};
+
+}
+(function ($, document, undefined) {
+$.modresize=function(){
+$('.modmedia-image').each(function() {
+var image_width = $(this).attr('data-width');
+var image_height = $(this).attr('data-height');
+var ratio = Math.round(($(this).width() / image_width) * 1000) / 1000;
+if(ratio <0.5){ ratio_resize=0.5;}else{ ratio_resize=ratio;}
+$(this).parent().find('.lookbook-item').each(function() {
+$(this).width($(this).attr('data-width') * ratio_resize);
+$(this).height($(this).attr('data-height') * ratio_resize);
+var top = Math.round($(this).attr('data-top') / (image_height) * 1000) / 1000;
+var left = Math.round($(this).attr('data-left') / (image_width) * 1000) / 1000;
+$(this).css({
+top: top * ratio * image_height,
+left: left * ratio * image_width
+});
+});
+});
+};
+var flexslider_container=$('<div  id="lookbook-modmedia-6112" class="lookbook-modmedia-container"></div>');
+var flexsliderwr=$('<div class="lookbook-modmedia-flexslider"></div>');
+var ul_pages=$('<ul class="lookbook_slides"></ul>');
+$('#lookbook-modmedia-container').append(flexslider_container);
+var list_pages='';
+if(pages.length == 0){
+ul_pages.append('<li>There is no pages in this Lookbook.</li>');
+}else{
+$.each(pages, function(page_index){
+list_pages=$('<li></li>');
+var page_image='';
+var page_image_width=0;
+var page_image_height=0;
+if(pages[page_index].image['full_path']!== undefined){
+page_image='<img src="' + pages[page_index].image['full_path'] + '" alt="Main image"/>';
+page_image_width=pages[page_index].image['image_width'];
+page_image_height=pages[page_index].image['image_height'];
+}
+var modimage=$('<div class="modmedia-image" data-width="'+page_image_width + '" data-height="' + page_image_height + '" style="max-width:'+page_image_width + 'px;">'+page_image+'</div>');
+var hovers=$('<div class="hovers"></div>');
+var products=pages[page_index].products;
+var page=pages[page_index].page;
+$.each(products, function(prod){
+var display_image='';
+if(products[prod].show_image == 1){
+display_image='<div class="modmedia-lookbook-product-image"><img style="max-width:150px; max-height:150px;" src="' + products[prod].image + '" alt="' + products[prod].handle + '"/></div>';
+}
+var display_name_price='';
+if(products[prod].show_title == 1){
+display_name_price='<div class="name"></div>';
+}
+if(products[prod].show_price == 1){
+display_name_price+='<div class="price"></div>';
+}
+if(display_name_price!=''){
+display_name_price='<div class="name-price">'+display_name_price+'</div>';
+}
+var pin='<a href="'+products[prod].url+'" target="'+products[prod].link_target+'"><img src="'+products[prod].icon+'" alt="+"/></a>';
+hovers.append('<div id="pin-'+page+'-'+products[prod].item+'" data-container="modmedia-lookbook-item-hover" class="lookbook-item pin-'+page+'-'+products[prod].item+'" data-item="'+prod+'" data-width="'+products[prod].icon_width+'" data-height="'+products[prod].icon_height+'" data-id="'+products[prod].item+'" data-top="'+products[prod].top+'" data-left="'+products[prod].left+'" data-image="'+products[prod].image+'" data-name="" data-linkto="'+products[prod].linkto+'" data-link_target="'+products[prod].link_target+'" data-url="'+products[prod].url+'" data-handle="'+products[prod].handle+'" data-price="" data-custom_title="'+products[prod].custom_title+'" style="top:'+products[prod].top+'px; left:'+products[prod].left+'px;">'+pin+'<div id="modhover-pin-'+page+'-'+products[prod].item+'" class="modhover-pin-'+page+'-'+products[prod].item+' modmedia-lookbook-item-hover ml-item-hover-luxury-spring-2020">'+display_image+display_name_price+'</div>'+'</div>');
+});
+modimage.append(hovers);
+list_pages.append(modimage);                      
+ul_pages.append(list_pages);              
+});
+}
+flexslider_container.append(flexsliderwr);
+flexsliderwr.append(ul_pages);
+$('.lookbook-modmedia-flexslider').flexslider({
+namespace: "fflex-",
+selector: ".lookbook_slides > li",   
+animation: "slide",
+animationLoop: true,
+slideshow: false,
+start:function(){
+$(window).resize();
+},
+before:function(){
+$('.modmedia-lookbook-item-hover').hide();                
+}
+});
+$( "#lookbook-modmedia-container img" ).load(function() {
+$(window).resize();
+}); 
+$(window).resize(function() {
+$.modresize();
+});
+$(window).load(function() {
+$.modresize();
+});
+$.check_loaded=function(e, obj, value){
+var item=obj.attr('id');
+var hover_product=$('.modhover-'+item);
+if(obj.attr('data-loaded')=='1'){
+$.positionBox(e, obj, hover_product);
+}else{
+if(hover_product.find('.name')){
+if(value=='name'){
+obj.attr('nameloaded',1);
+}
+}else{
+obj.attr('nameloaded',1);
+}
+if(hover_product.find('.price')){
+if(value=='price'){
+obj.attr('priceloaded',1);
+}
+}else{
+obj.attr('priceloaded',1);
+}
+if(obj.attr('nameloaded') == 1 && obj.attr('priceloaded') == 1){
+obj.removeAttr('nameloaded');
+obj.removeAttr('priceloaded');
+obj.removeAttr('imageloaded');
+obj.attr('data-loaded',1);
+obj.parent().find('.loading-look-product').remove();
+$.positionBox(e, obj, hover_product);
+}
+}
+};
+/* shreeji add code start for mobile device */
+    $('.lookbook-item').click(function() {
+        if($("#"+$(this).attr('id')+' a').attr('href')==""||$("#"+$(this).attr('id')+' a').attr('href')=="undefined"){
+            return false;
+        } else{
+            var item=$(this).attr('id');
+            var link=$('<a href ="'+$(this).attr('data-url')+'" target="'+$(this).attr('data-link_target')+'"></a>');
+            link[0].click();
+            return true;
+        }
+
+    });   
+/* shreeji add code end for mobile device */
+/* Mobile arrow turn off/on */
+var browserWidth = $(window).width();
+if (browserWidth <= 767  ){
+    }  
+$('.lookbook-item').mouseover(function(e) {
+var thise=e;
+var thisobj=$(this);
+var item=$(this).attr('id');
+var hover_product=$('.modhover-'+item);
+if($(this).find('.modhover-'+item).length>0){
+if($('.modhover-'+item).length>1){
+$('.modhover-'+item).eq(1).remove();
+hover_product=$('.modhover-'+item);
+}
+hover_product.appendTo($('body'));
+}
+$('.modmedia-lookbook-item-hover:not('+'.modhover-'+item+')').fadeOut();
+if($(this).attr('data-handle')!=''){
+if($(this).attr('data-name')==''){
+var loadingtxt=$('<div class="loading-look-product">Loading...</div>');
+$(this).parent().append(loadingtxt);
+loadingtxt.css({
+top:$(this).position().top + 20,
+left:$(this).position().left + 20,
+position:'absolute'
+});
+hover_product.find('.name').hide();
+hover_product.find('.price').hide();
+var handle=$(this).attr('data-handle');
+$.ajax({
+url:'/products/'+handle+'.js',
+type:'GET',
+dataType:'json',
+success:function(data){
+if(hover_product.find('.name')){
+if($('#'+item).attr('data-custom_title') != ''){
+$('#'+item).attr('data-name',$('#'+item).attr('data-custom_title'));
+}else{
+$('#'+item).attr('data-name',data.title);
+}
+hover_product.find('.name').text($('#'+item).attr('data-name'));
+hover_product.find('.name').fadeIn();
+$.check_loaded(e, thisobj, 'name');
+}
+if(hover_product.find('.price')){
+var price='';
+if(data.price_varies){
+price='<span class="from">from:</span> <span class="price_value">'+Shopify.formatMoney(data.price_min,modlookbook_money_with_currency_format)+'</span>';
+}else{
+price='<span class="price_value">'+Shopify.formatMoney(data.price,modlookbook_money_with_currency_format)+'</span>';
+}
+if(data.compare_at_price > 0){
+if(data.compare_at_price_varies){
+if(data.price_min != data.compare_at_price_min || data.price_max != data.compare_at_price_max){
+price=price+'<em class="compare_at_price">'+Shopify.formatMoney(data.compare_at_price_min,modlookbook_money_with_currency_format)+'</em>';
+}
+}else{
+if(data.price != data.compare_at_price){
+price=price+'<em class="compare_at_price">'+Shopify.formatMoney(data.compare_at_price,modlookbook_money_with_currency_format)+'</em>';
+}
+}
+}
+$('#'+item).attr('data-price',price);
+hover_product.find('.price').html(price);
+hover_product.find('.price').fadeIn();
+$.check_loaded(e, thisobj, 'price');
+}
+if($('#'+item).attr('data-linkto')=="1"){
+$('#'+item).attr('data-url',data.url);
+$('#'+item+' a').attr('href',data.url);
+}
+hover_product.wrapInner('<a href="'+data.url+'" target="'+$('#'+item).attr('data-link_target')+'"></a>');
+$(window).resize();
+},
+error:function(x,e){
+thisobj.parent().find('.loading-look-product').remove();
+}
+});
+}else{
+hover_product.find('.name').html($(this).attr('data-name'));
+hover_product.find('.price').html($(this).attr('data-price'));
+$(window).resize();
+}                
+}else{
+
+                if($(this).find('.modhover-'+item).length>0){
+                    if($('.modhover-'+item).length>1){
+                        $('.modhover-'+item).eq(1).remove();
+                        hover_product=$('.modhover-'+item);
+                    }
+                    hover_product.appendTo($('body'));
+                }
+                if($(this).attr('data-custom_title')!=''){              
+                    hover_product.find('.name').hide();
+                    hover_product.find('.price').hide();
+                    hover_product.find('.name').text($(this).attr('data-custom_title'));
+                    hover_product.find('.name').fadeIn();
+                    thisobj.attr('data-loaded',1);
+                }
+                /*added by shree for iphone*/
+                if($(this).attr('data-handle')==''){
+                  if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) 
+                      window.location=$(this).attr('data-url');
+                }
+                /*added by shree for iphone*/
+            }
+$.check_loaded(e, thisobj, '');
+});
+$.positionBox=function(e, obj, hover_product){
+hover_product.css({
+visibility: "hidden",
+display: "block"
+});
+var win = $(window);
+var viewport = {
+top : win.scrollTop(),
+left : win.scrollLeft()
+};
+viewport.right = viewport.left + win.width();
+viewport.bottom = viewport.top + win.height();
+
+var left=e.pageX+ (obj.outerWidth()/2);
+var top=e.pageY + (obj.outerHeight()/2);
+
+hover_product.css({
+position:'absolute',
+top: top,
+left: left                
+});
+
+var bounds = hover_product.offset();
+bounds.right = bounds.left + hover_product.outerWidth();
+bounds.bottom = bounds.top + hover_product.outerHeight();
+if(bounds.right > win.width()){
+left=e.pageX - (bounds.right-viewport.right); 
+}
+
+if(bounds.bottom > win.height()){
+newtop=e.pageY - hover_product.outerHeight() - (obj.outerHeight()/2);
+if(newtop > viewport.top){
+top=newtop;
+}
+}
+hover_product.css({
+position:'absolute',
+top: top,
+left: left
+});
+hover_product.css({
+visibility: "visible",
+display: "block"
+});
+hover_product.fadeIn();
+obj.mousemove();
+};
+$('.lookbook-item').mousemove(function(e){
+var item=$(this).attr('id');
+var hover_product=$('.modhover-'+item);
+
+var win = $(window);
+var viewport = {
+top : win.scrollTop(),
+left : win.scrollLeft()
+};
+viewport.right = viewport.left + win.width();
+viewport.bottom = viewport.top + win.height();
+
+var left=e.pageX+ ($(this).outerWidth()/2);
+var top=e.pageY + ($(this).outerHeight()/2);
+
+hover_product.css({
+position:'absolute',
+top: top,
+left: left
+});
+
+var bounds = hover_product.offset();
+bounds.right = bounds.left + hover_product.outerWidth();
+bounds.bottom = bounds.top + hover_product.outerHeight();
+if(bounds.right > win.width()){
+left=e.pageX - (bounds.right-viewport.right); 
+}
+
+if(bounds.bottom > win.height()){
+newtop=e.pageY - hover_product.outerHeight() - ($(this).outerHeight()/2);
+if(newtop > viewport.top){
+top=newtop;
+}
+}
+hover_product.css({
+position:'absolute',
+top: top,
+left: left
+});
+});
+var timers={};
+$('.lookbook-item').mouseout(function() {
+var item=$(this).attr('id');
+var hover_product=$('.modhover-'+item);
+timers['i-'+item]=setTimeout(function(){ hover_product.fadeOut();},200);
+});
+$('.modmedia-lookbook-item-hover').mouseover(function(){
+var id=$(this).attr('id');
+$('.'+id).fadeIn(0);
+var item=id.replace('modhover-','');
+if((typeof timers['i-'+item]) !== 'undefined'){
+clearTimeout(timers['i-'+item]);
+}
+$('.modmedia-lookbook-item-hover:not('+'.'+id+')').fadeOut();            
+});
+$('.modmedia-lookbook-item-hover').mouseout(function(){
+var id=$(this).attr('id');
+var item=id.replace('modhover-','');
+timers['i-'+item]=setTimeout(function(){ $('#'+id).fadeOut();},100);
+});
+})(modlookbookjQuery, document);
+};
+set_modlookbookjquery();
+}

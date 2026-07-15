@@ -1,0 +1,26 @@
+<a name="pagecontent" id="pagecontent"></a>
+
+<div class="sixteen columns page clearfix">
+  <h1>
+    {{ page.title }}
+  </h1>
+  <div class="feature_divider"></div>
+
+  <div>
+    {% render 'page-multi-column', content: page.content %}
+  </div>
+</div>
+<div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="list">
+                                <div class="look-container"><div id="lookbook-modmedia-container">
+                                Loading...
+                                </div>
+                    </div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+                    {{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+                    <script type="text/javascript">
+                    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+                    var pages_content = {'fall-u201922-lookbook-1':{{ pages.fall-u201922-lookbook-1.content | json }},'holiday-22u2019-lookbook':{{ pages.holiday-22u2019-lookbook.content | json }},'spring-23u2019-lookbook':{{ pages.spring-23u2019-lookbook.content | json }},'high-summer-23':{{ pages.high-summer-23.content | json }},'fall-23-lookbook-2':{{ pages.fall-23-lookbook-2.content | json }},'holiday-23':{{ pages.holiday-23.content | json }},'fall-u201922-lookbook':{{ pages.fall-u201922-lookbook.content | json }},'pre-spring-2022':{{ pages.pre-spring-2022.content | json }},'summer-23-lookbook-1':{{ pages.summer-23-lookbook-1.content | json }},'summer-2022':{{ pages.summer-2022.content | json }},'spring-22':{{ pages.spring-22.content | json }},'pre-spring-21':{{ pages.pre-spring-21.content | json }},'holiday-21-lookbook':{{ pages.holiday-21-lookbook.content | json }},'fall-21-lookbook':{{ pages.fall-21-lookbook.content | json }},'summer-u201821-lookbook':{{ pages.summer-u201821-lookbook.content | json }},'spring-21-lookbook':{{ pages.spring-21-lookbook.content | json }},'pre-spring-20-lookbook':{{ pages.pre-spring-20-lookbook.content | json }},'fall-20-lookbook':{{ pages.fall-20-lookbook.content | json }},'summer-20':{{ pages.summer-20.content | json }},'spring-20-lookbook':{{ pages.spring-20-lookbook.content | json }}};
+                        var s = document.createElement("script");
+                        s.type = "text/javascript";
+                        s.src = "https://modapps2.com.au/lookbook/assets/templates/sundryusa-2.myshopify.com/mod_media_lightbox_list_8e23b.js?t=1698114885";
+                        document.getElementsByTagName("head")[0].appendChild(s);
+                    </script></div>

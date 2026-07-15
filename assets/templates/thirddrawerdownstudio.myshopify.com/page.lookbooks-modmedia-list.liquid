@@ -1,0 +1,31 @@
+<div id="page" class="desktop-12 tablet-6 mobile-3">
+  <div id="page-content"{% if linklists[settings.pagelist] != blank %} class="desktop-9 tablet-4 mobile-3{% endif %}">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <div class="rte"><div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'artist-collection-2018-1':{{ pages.artist-collection-2018-1.content | json }},'hi-art-2018-1':{{ pages.hi-art-2018-1.content | json }},'the-australian-collection-2018-1':{{ pages.the-australian-collection-2018-1.content | json }},'third-drawer-down-studio-look-book-2016':{{ pages.third-drawer-down-studio-look-book-2016.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/thirddrawerdownstudio.myshopify.com/mod_media_lightbox_list_c218c.js?t=1525398343";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>
+  </div>
+  
+  {% if linklists[settings.pagelist] != blank %}
+  <div id="page-sidebar" class="desktop-3 tablet-2 mobile-3">
+    <h2>{{ settings.page-sidebar-title }}</h2>
+    <ul>
+      {% for link in linklists[settings.pagelist].links %}
+      <li>{{ link.title | link_to: link.url }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>
+

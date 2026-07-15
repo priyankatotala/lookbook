@@ -1,0 +1,25 @@
+{% include 'shogun-products', content: page %}
+{% include 'breadcrumb' %}
+<header class="page-header">
+    <h2>{{ page.title }}</h2>
+</header>
+
+{% comment %}
+  Regular page content goes here.
+{% endcomment %}
+<div class="rte">
+  <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'noir':{{ pages.noir.content | json }},'noir-1':{{ pages.noir-1.content | json }},'bolder-together':{{ pages.bolder-together.content | json }},'be-omself':{{ pages.be-omself.content | json }},'lookbook-december':{{ pages.lookbook-december.content | json }},'lookbook-november-1':{{ pages.lookbook-november-1.content | json }},'lookbook-october-2018':{{ pages.lookbook-october-2018.content | json }},'lookbook-august':{{ pages.lookbook-august.content | json }},'lookbook-september':{{ pages.lookbook-september.content | json }},'lookbook-october':{{ pages.lookbook-october.content | json }},'lookbook-november':{{ pages.lookbook-november.content | json }},'lookbook-january':{{ pages.lookbook-january.content | json }},'lookbook-february':{{ pages.lookbook-february.content | json }},'lookbook-march':{{ pages.lookbook-march.content | json }},'lookbook-april':{{ pages.lookbook-april.content | json }},'lookbook-may':{{ pages.lookbook-may.content | json }},'lookbook-june-1':{{ pages.lookbook-june-1.content | json }},'lookbook-july-1':{{ pages.lookbook-july-1.content | json }},'lookbook-august-1':{{ pages.lookbook-august-1.content | json }},'look-book-september-2018':{{ pages.look-book-september-2018.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/liquidoaustralia.myshopify.com/mod_media_lightbox_list_f793d.js?t=1557929992";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>

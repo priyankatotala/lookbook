@@ -1,0 +1,15 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2023-09-11 04:30:36 --> Severity: Warning  --> file_get_contents(/var/www/vhosts/modapps2.com.au/httpdocs/lookbook/assets/templates/ccd40b.myshopify.com/page.lookbooks-modmedia-list.liquid): failed to open stream: No such file or directory /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/themes/controllers/themes.php 721
+ERROR - 2023-09-11 04:30:36 --> Severity: Warning  --> file_get_contents(/var/www/vhosts/modapps2.com.au/httpdocs/lookbook/assets/templates/ccd40b.myshopify.com/page.lookbooks-modmedia-single.liquid): failed to open stream: No such file or directory /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/themes/controllers/themes.php 722
+ERROR - 2023-09-11 04:30:36 --> Severity: Warning  --> file_get_contents(/var/www/vhosts/modapps2.com.au/httpdocs/lookbook/assets/templates/ccd40b.myshopify.com/page.lookbooks-modmedia-list.liquid): failed to open stream: No such file or directory /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/themes/controllers/themes.php 721
+ERROR - 2023-09-11 04:30:36 --> Severity: Warning  --> file_get_contents(/var/www/vhosts/modapps2.com.au/httpdocs/lookbook/assets/templates/ccd40b.myshopify.com/page.lookbooks-modmedia-single.liquid): failed to open stream: No such file or directory /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/themes/controllers/themes.php 722
+ERROR - 2023-09-11 04:30:36 --> Severity: Warning  --> file_get_contents(/var/www/vhosts/modapps2.com.au/httpdocs/lookbook/assets/templates/ccd40b.myshopify.com/page.lookbooks-modmedia-list.liquid): failed to open stream: No such file or directory /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/themes/controllers/themes.php 721
+ERROR - 2023-09-11 04:30:36 --> Severity: Warning  --> file_get_contents(/var/www/vhosts/modapps2.com.au/httpdocs/lookbook/assets/templates/ccd40b.myshopify.com/page.lookbooks-modmedia-single.liquid): failed to open stream: No such file or directory /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/themes/controllers/themes.php 722
+ERROR - 2023-09-11 06:25:04 --> Webhook: error no domain info {"shop_id":69174886422,"shop_domain":"app-security-03.myshopify.com"}
+ERROR - 2023-09-11 06:50:41 --> Page Missing: assets/templates/infamous-swim.myshopify.com/mod_media_lightbox_0102480967729286.js
+ERROR - 2023-09-11 10:40:01 --> Page Missing: assets/templates/mika-milo.myshopify.com/mod_media_lightbox_9adb066842263714.js
+ERROR - 2023-09-11 11:53:39 --> Page Missing: assets/templates/the-willow-tree-boutique-2.myshopify.com/mod_media_lightbox_list_8e123.js
+ERROR - 2023-09-11 13:59:10 --> Page Missing: assets/templates/sohofashion.myshopify.com/mod_media_lightbox_6769716982601.js
+ERROR - 2023-09-11 21:24:25 --> Page Missing: assets/templates/mariannasenchina.myshopify.com/mod_media_lightbox_e4c58235903122.js
+ERROR - 2023-09-11 23:14:24 --> Page Missing: assets/templates/mariannasenchina.myshopify.com/mod_media_lightbox_e4c58235903122.js

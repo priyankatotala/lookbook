@@ -1,0 +1,20 @@
+{% include 'breadcrumb' %}
+{% comment %}
+  Regular page content goes here.
+{% endcomment %}
+<div class="rte">
+  <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'the-coat-edit-2019':{{ pages.the-coat-edit-2019.content | json }},'the-september-edit':{{ pages.the-september-edit.content | json }},'the-way-you-look-tonight':{{ pages.the-way-you-look-tonight.content | json }},'falls-fashion-edit':{{ pages.falls-fashion-edit.content | json }},'spring-looks-we-love':{{ pages.spring-looks-we-love.content | json }},'spring2019_specialo':{{ pages.spring2019_specialo.content | json }},'cartise-spring-2019':{{ pages.cartise-spring-2019.content | json }},'joseph-ribkoff-spring19':{{ pages.joseph-ribkoff-spring19.content | json }},'fall-2018-be-your-own-kind-of-beautiful':{{ pages.fall-2018-be-your-own-kind-of-beautiful.content | json }},'spring2018-vol-2':{{ pages.spring2018-vol-2.content | json }},'spring-summer18-edit_feb':{{ pages.spring-summer18-edit_feb.content | json }},'enchanting-holiday-looks':{{ pages.enchanting-holiday-looks.content | json }},'fw17-coats':{{ pages.fw17-coats.content | json }},'fall-winter-17-vol-2':{{ pages.fall-winter-17-vol-2.content | json }},'new-arrivals-fall-2017':{{ pages.new-arrivals-fall-2017.content | json }},'sp17-special-o':{{ pages.sp17-special-o.content | json }},'spring-2017-look-book':{{ pages.spring-2017-look-book.content | json }},'hauty-holiday-looks':{{ pages.hauty-holiday-looks.content | json }},'summer-2016':{{ pages.summer-2016.content | json }},'spring2016_specialo':{{ pages.spring2016_specialo.content | json }},'spring2016':{{ pages.spring2016.content | json }},'fw15_coat':{{ pages.fw15_coat.content | json }},'fall-winter-15':{{ pages.fall-winter-15.content | json }},'fw15_specialo':{{ pages.fw15_specialo.content | json }},'theres-something-about-fall':{{ pages.theres-something-about-fall.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/jmichaels-official.myshopify.com/mod_media_lightbox_list_bd33b.js?t=1569683213";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>

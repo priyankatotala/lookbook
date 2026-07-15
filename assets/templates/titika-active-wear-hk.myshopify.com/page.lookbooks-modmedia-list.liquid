@@ -1,0 +1,14 @@
+{%- section 'page-template' -%}<div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="list">
+            <div class="look-container"><div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'test-1':{{ pages.test-1.content | json }},'portrait':{{ pages.portrait.content | json }},'neo-active':{{ pages.neo-active.content | json }},'light-and-lines':{{ pages.light-and-lines.content | json }},'pavillion':{{ pages.pavillion.content | json }},'skate-park-1':{{ pages.skate-park-1.content | json }},'glam-active-1':{{ pages.glam-active-1.content | json }},'arena':{{ pages.arena.content | json }},'rooftop':{{ pages.rooftop.content | json }},'downtown':{{ pages.downtown.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/titika-active-wear-hk.myshopify.com/mod_media_lightbox_list_c8935.js?t=1544669354";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>

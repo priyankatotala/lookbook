@@ -1,0 +1,43 @@
+<section class="content content-area">
+
+  {% include 'breadcrumbs' %}
+
+  <div class="page-title">
+    <h1 class="label">{{ page.title }}</h1>
+  </div>
+
+  <div class="text-content-wrap clearfix">
+    <div class="rte clearfix text-content">
+      <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'ss18':{{ pages.ss18.content | json }},'spring-summer-17':{{ pages.spring-summer-17.content | json }},'snow-winter-1617':{{ pages.snow-winter-1617.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/eu-pgc-nikita.myshopify.com/mod_media_lightbox_list_35e93.js?t=1523865722";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+    </div>
+
+    {% if settings.display-pages-sidebar %}
+    <div class="sidebar rte">
+      {% if settings.pages-sidebar-title %}<h2 class="title">{{ settings.pages-sidebar-title }}</h2>{% endif %}
+      {% if settings.pages-sidebar-content.size == 0 %}
+        {% capture theme_settings_link %}
+          <a href="/admin/themes">{{ 'onboarding.theme_settings_link' | t }}</a>
+        {% endcapture %}
+        {{ 'onboarding.pages_sidebar_text_html' | t: theme_settings_link: theme_settings_link }}
+      {% else %}
+        {{ settings.pages-sidebar-content }}
+      {% endif %}
+    </div>
+    {% endif %}
+
+  </div>
+
+</section>

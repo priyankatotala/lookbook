@@ -1,0 +1,33 @@
+<!-- /templates/page.liquid -->
+<section class="page page-top">
+  <div class="wrapper">
+    <header class="content-util">
+    {% include 'breadcrumb' %}
+    {% include 'social-icons' %}
+    </header>
+    <header class="page-header">
+      <h1>{{ page.title }}</h1>
+    </header>
+  </div>
+</section>
+
+<section class="page">
+  <div class="wrapper">
+    <div class="content-container narrow rte">
+      <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'the-notorious-b-i-g-collection':{{ pages.the-notorious-b-i-g-collection.content | json }},'the-tmnt-collection':{{ pages.the-tmnt-collection.content | json }},'the-spongebob-squarepants-collection':{{ pages.the-spongebob-squarepants-collection.content | json }},'the-simpsons-collection':{{ pages.the-simpsons-collection.content | json }},'the-wu-tang-collection':{{ pages.the-wu-tang-collection.content | json }},'staple-x-king-ice':{{ pages.staple-x-king-ice.content | json }},'the-conquering-queen':{{ pages.the-conquering-queen.content | json }},'the-odd-future-collection':{{ pages.the-odd-future-collection.content | json }},'skate-aid':{{ pages.skate-aid.content | json }},'the-space-jam-collection':{{ pages.the-space-jam-collection.content | json }},'the-looney-tunes-collection':{{ pages.the-looney-tunes-collection.content | json }},'the-batman-collection':{{ pages.the-batman-collection.content | json }},'room-21162':{{ pages.room-21162.content | json }},'the-fantastic-beasts-collection':{{ pages.the-fantastic-beasts-collection.content | json }},'amore-a-prima-vista':{{ pages.amore-a-prima-vista.content | json }},'king-ice-x-illest':{{ pages.king-ice-x-illest.content | json }},'empire-lookbook':{{ pages.empire-lookbook.content | json }},'the-guidance-of-virtue':{{ pages.the-guidance-of-virtue.content | json }},'uncle-snoop-presents-jungl-julz':{{ pages.uncle-snoop-presents-jungl-julz.content | json }},'kickback':{{ pages.kickback.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/kingice.myshopify.com/mod_media_lightbox_list_3c1aa.js?t=1579625716";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+    </div>
+  </div>
+</section>

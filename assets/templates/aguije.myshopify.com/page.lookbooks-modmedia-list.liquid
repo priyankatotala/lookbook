@@ -1,0 +1,26 @@
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      <div class="rte">
+        <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'2017-ss-mens-look-1':{{ pages.2017-ss-mens-look-1.content | json }},'2017-ss-mens-look-2':{{ pages.2017-ss-mens-look-2.content | json }},'2017-ss-mens-look-3':{{ pages.2017-ss-mens-look-3.content | json }},'2017-ss-mens-look-4':{{ pages.2017-ss-mens-look-4.content | json }},'2017-ss-mens-look-5':{{ pages.2017-ss-mens-look-5.content | json }},'2017-ss-mens-look-6':{{ pages.2017-ss-mens-look-6.content | json }},'2017-ss-mens-look-7':{{ pages.2017-ss-mens-look-7.content | json }},'2017-ss-mens-look-8':{{ pages.2017-ss-mens-look-8.content | json }},'2017-ss-womens-look-1':{{ pages.2017-ss-womens-look-1.content | json }},'2017-ss-womens-look-2':{{ pages.2017-ss-womens-look-2.content | json }},'2017-ss-womens-look-3':{{ pages.2017-ss-womens-look-3.content | json }},'2017-ss-womens-look-4':{{ pages.2017-ss-womens-look-4.content | json }},'2017-ss-womens-look-5':{{ pages.2017-ss-womens-look-5.content | json }},'2017-ss-womens-look-6':{{ pages.2017-ss-womens-look-6.content | json }},'2017-ss-womens-look-7':{{ pages.2017-ss-womens-look-7.content | json }},'2017-ss-womens-look-8':{{ pages.2017-ss-womens-look-8.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/aguije.myshopify.com/mod_media_lightbox_list_2d6fc.js?t=1573719551";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+      </div>
+    </div>
+  </div>
+</div>

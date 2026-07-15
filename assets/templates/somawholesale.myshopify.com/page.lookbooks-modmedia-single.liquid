@@ -1,0 +1,37 @@
+<div id="page" class="desktop-12 tablet-6 mobile-3">
+  <div id="page-content" class="desktop-9 tablet-4 mobile-3">
+    <h1 class="page-title">{{ page.title }}</h1>
+    <div class="rte"><div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.content }}
+</div>
+<script type="text/javascript">
+var modlookbook_exist=false;
+  var modlookbook_url = 'http://shopifyexpert.com.au/lookbook/assets/templates/somawholesale.myshopify.com/mod_media_lightbox_76909{{ page.id }}.js?t=1402073803';
+    var modlookbook_scripts = document.getElementsByTagName('script');
+    for (var i = modlookbook_scripts.length; i--;) {
+      if (modlookbook_scripts[i].src == modlookbook_url){
+        modlookbook_exist=true;
+      };
+    }
+  if(!modlookbook_exist){
+    Shopify.money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http://shopifyexpert.com.au/lookbook/assets/templates/somawholesale.myshopify.com/mod_media_lightbox_76909{{ page.id }}.js?t=1402073803";
+    document.getElementsByTagName("head")[0].appendChild(s);
+    }
+</script></div>
+  </div>
+  
+  <div id="page-sidebar" class="desktop-3 tablet-2 mobile-3">
+    <h2>{{ settings.page-sidebar-title }}</h2>
+    <ul>
+      {% for link in linklists.[settings.pagelist].links %}
+      <li>{{ link.title | link_to: link.url }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+

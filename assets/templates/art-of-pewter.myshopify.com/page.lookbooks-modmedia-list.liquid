@@ -1,0 +1,41 @@
+<div id="crumbs" class="sixteen columns">
+    <a href="/" title="Home">Home</a>
+    &raquo;
+    <a href="{{ page.url }}">{{ page.title }}</a>
+</div><!-- #crumbs -->
+
+{% if settings.show_social_page %}
+<div class="social floating">
+    <span class="label">{{ settings.text_sharethis }}</span>
+    {% include 'social-sharing' %}
+</div>
+{% endif %}
+
+<div class="ten columns">
+    <h1>{{ page.title }}</h1>
+    <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{% include 'process-html' with page.content %}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'test':{{ pages.test.content | json }},'lookbook':{{ pages.lookbook.content | json }},'the-farmhouse-lookbook':{{ pages.the-farmhouse-lookbook.content | json }},'grove-hotel-lookbook':{{ pages.grove-hotel-lookbook.content | json }},'the-chapel-lookbook':{{ pages.the-chapel-lookbook.content | json }},'lookbook-ty-unnos':{{ pages.lookbook-ty-unnos.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/art-of-pewter.myshopify.com/mod_media_lightbox_list_d8fcc.js?t=1448542491";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>
+
+<aside class="five columns offset-by-one widgets">
+    {% assign data = settings.widget_s1_handle %}
+    {% unless data == '' %}{% include settings.widget_s1_type %}{% endunless %}
+    
+    {% assign data = settings.widget_s2_handle %}
+    {% unless data == '' %}{% include settings.widget_s2_type %}{% endunless %}
+    
+    {% assign data = settings.widget_s3_handle %}
+    {% unless data == '' %}{% include settings.widget_s3_type %}{% endunless %}
+</aside>

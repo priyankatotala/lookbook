@@ -1,0 +1,272 @@
+{% include '_locale' %}
+
+<div class="ambiance">
+    <div class="ambiance--wrapper">
+        <div class="ambiance__back">
+            <a class="button" data-text="Back" href="/pages/ambiances">
+                <i class="icon-arrow-left"></i>
+                {{ 'ambiances.back' | prepend: lang_var | t }}
+            </a>
+        </div>
+        <div class="ambiance__image">
+
+            <div id="modmedia-lookbooks" class="banner-slider-wrapper single">
+
+                <div id="lookbook-modmedia-container">
+                </div>
+                <!--<div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            </div>
+            {{ page.lookbooks.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'ambiance-1':{{ pages.ambiance-1.content | json }},'ambiance-2':{{ pages.ambiance-2.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http//shopifyexpert.com.au/lookbook/assets/templates/artemano-dev.myshopify.com/mod_media_lightbox_list_e9c4e.js?t=1495605884";
+    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+                </div>-->
+
+                <div class="banner-slider__dots"></div>
+
+                <div class="banner-slider__arrows">
+                    <div class="banner-slider__arrow--left"><i class="icon-arrow-left-circle"></i></div>
+                    <div class="banner-slider__arrow--right"><i class="icon-arrow-right-circle"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="ambiance-product" class="ambiance__product" data-blur-close="true">
+            <a class="ambiance__product--image">
+                <img src="//placehold.it/300x300" alt="">
+            </a>
+            <a href="#">
+                <h1 class="ambiance__product--title light">Product title <br /> Collection</h1>
+            </a>
+
+            <p class="ambiance__product--price"><span class="number">$3000</span></p>
+
+            <div class="ambiance__product--add-to-cart">
+                <input type="submit" class="light" value="{{ 'product.product-actions.add-to-cart-button-text' | prepend: lang_var | t }}">
+            </div>
+
+            <h5 class="ambiance__product--reference">{{ 'product.product-info.product-code-label-text' | prepend: lang_var | t }} <span class="number">AA123456</span></h5>
+
+            <div class="ambiance__product--variants">
+                <div class="input-wrapper">
+                    <select name="dimensions" class="light">
+                        <option value="Dimensions">Dimensions</option>
+                    </select>
+                    <i class="icon-arrow-down"></i>
+                </div>
+                <div class="input-wrapper">
+                    <select name="finish" class="light">
+                        <option value="Finish">Finish</option>
+                    </select>
+                    <i class="icon-arrow-down"></i>
+                </div>
+            </div>
+
+            <div class="ambiance__product--link">
+                <a href="" class="">
+                    More Information
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+{% include 'template-ambiance-product' %}
+
+<script type="text/javascript">
+
+    // Load Lookbook
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/artemano-dev.myshopify.com/mod_media_lightbox_e9c4e{{page.id}}.js?t=1492745409";
+    document.getElementsByTagName("head")[0].appendChild(s);
+
+    $(function(){
+
+        var checkDOMChange = function checkDOMChange(){
+            // check if lookbook is loaded
+            if($('#lookbook-modmedia-container ul').length){
+                ambianceSliderInit();
+                productQuickView();
+                return false;
+            }
+
+            console.log('ha');
+
+            // call the function again after 100 milliseconds
+            setTimeout( checkDOMChange, 100 );
+        }
+
+        checkDOMChange();
+    });
+
+
+    // Ambiances Slider
+
+    function ambianceSliderInit(){
+
+        var $carousel = $('#lookbook-modmedia-container > ul');
+
+        $carousel.on('init reInit', function(event, slick){
+            if (slick.slideCount > 1) {
+                $carousel.closest('.banner-slider-wrapper').find('.banner-slider__arrow--left').fadeIn();
+                $carousel.closest('.banner-slider-wrapper').find('.banner-slider__arrow--right').fadeIn();
+            }
+        }).slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            infinite: false,
+            speed: 1400,
+            focusOnSelect: false,
+            appendDots: $carousel.closest('.banner-slider-wrapper').find('.banner-slider__dots'),
+            arrows: false,
+            swipe: true,
+            customPaging : function(slider, i) {
+                return '<div class="carousel__dot"></div>';
+            }
+        });
+
+        // Slider arrows
+
+        $('.banner-slider__arrow--left').click(function () {
+            $carousel.slick('prev');
+        });
+
+        $('.banner-slider__arrow--right').click(function () {
+            $carousel.slick('next');
+        });
+    };
+
+    function productQuickView(){
+
+        // Show Product info on sidebar
+        $('html.no-touchevents .lookbook-item a').click(function(event){
+            // This prevents the app from redirecting to the PDP
+            // This also prevents the auto-closing of other open elements
+            event.preventDefault();
+            event.stopPropagation();
+            event.stopImmediatePropagation();
+
+            var productUrl = $(this).attr('href') + '.js';
+
+            $.get(productUrl, null, undefined, 'json').then(function(product){
+
+                var variant = firstAvailableVariant(product);
+
+                console.log('yooooooo');
+
+                updateQuickView(product, variant);
+            });
+
+        });
+
+        $(document).on('change', '.input-wrapper[data-option] select', function() {
+
+            var productUrl = $('.product--quick-view').data('product-url') + '.js';
+
+            $.get(productUrl, null, undefined, 'json').then(function(product){
+                var variant = getSelectedVariant(product);
+
+                console.log('yaaa');
+                updateQuickView(product, variant);
+            });
+        });
+    }
+
+    function imgUrl(src, size) {
+        // remove any current image size then add the new image size
+        return src
+            .replace(/_(pico|icon|thumb|small|compact|medium|large|grande|original|1024x1024|2048x2048|master)+\./g, '.')
+            .replace(/\.jpg|\.png|\.gif|\.jpeg/g, function(match) {
+            return '_'+size+match;
+            });
+    }
+
+    function firstAvailableVariant(product){
+        for(var i = 0; i < product.variants.length; i++){
+            var variant = product.variants[i];
+            if(variant.available){
+                variant.price = money(variant.price);
+                return variant;
+            }
+        }
+    }
+
+    // Figure out the variant based on page selection
+    function getSelectedVariant(product) {
+        var size = $('[data-option=size] select').val();
+        var finish = $('[data-option=finish] select').val();
+        var selectedVariant = null;
+
+        $.each(product.variants, function() {
+            if(this.title.indexOf(size) > -1
+            && this.title.indexOf(finish) > -1) {
+                selectedVariant = this;
+                selectedVariant.price = money(selectedVariant.price);
+            }
+        });
+
+        return selectedVariant;
+    }
+
+    function updateQuickView(product, variant){
+
+        var options = product.options;
+
+        console.log('variant', variant);
+
+        // Create Option Handle
+        for(var i = 0; i < options.length; i++){
+            var option = options[i];
+            option.handle = option.name.toLowerCase().replace(/[^\w\u00C0-\u024f]+/g, "-").replace(/^-+|-+$/g, "");
+
+            // Create Value Handle and flag selected variant option value key/pair
+            for(var j = 0; j < option.values.length; j++){
+                option.values[j] = { name: option.values[j] };
+                option.values[j].handle = option.values[j].name.toLowerCase().replace(/[^\w\u00C0-\u024f]+/g, "-").replace(/^-+|-+$/g, "");
+            }
+        }
+
+        console.log('product', product);
+        console.log('variant', variant);
+
+        // Resize images
+        product.featured_image = imgUrl(product.featured_image, 'medium');
+        variant.featured_image.src = imgUrl(variant.featured_image.src, 'medium');
+
+        // Parse template
+        var customTags = [ '[[', ']]' ];
+        var template = $('#template-ambiance-product').html();
+        Mustache.parse(template, customTags);
+        var $productContainer = $('.ambiance__product').first();
+        var rendered = Mustache.render(template, {product: product, options: options, variant: variant});
+        $productContainer.html(rendered);
+
+        $('html.no-touchevents .ambiance__product').addClass('open');
+        $('html.no-touchevents .ambiance').addClass('ambiance--quick-view');
+
+    }
+
+        // Show Product info on sidebar
+        $(document).on('close', '#ambiance-product', function(e) {
+            $('html.no-touchevents .ambiance__product').removeClass('open');
+            $('html.no-touchevents .ambiance').removeClass('ambiance--quick-view');
+        });
+
+</script>

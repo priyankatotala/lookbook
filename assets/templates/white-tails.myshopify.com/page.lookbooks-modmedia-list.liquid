@@ -1,0 +1,19 @@
+<!-- /templates/page.fullwidth.liquid -->
+
+<section class="page">
+	<h2 class="theme">{{ page.title }}</h2>
+	<div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'the-fearless-1-collection':{{ pages.the-fearless-1-collection.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/white-tails.myshopify.com/mod_media_lightbox_list_9eb58.js?t=1568072625";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</section>

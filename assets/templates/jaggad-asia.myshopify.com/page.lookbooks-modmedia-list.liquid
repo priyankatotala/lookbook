@@ -1,0 +1,31 @@
+{% comment %}ly_global_begin{% endcomment %}{% include 'ly-global' %}{% comment %}ly_global_end{% endcomment %}{% include 'breadcrumb' %}
+<div class="container"><div class="line-home line-style-1"></div></div>
+<section id="columns" class="columns-container">
+	<div class="container">
+		<div class="row">
+			<section id="center_column" class="col-sm-12 col-md-12">
+              	<div class="page-wrap">
+					<h1 class="page-header bottom-indent">{% comment %}ly_code_replace_for_[ page.title ]_begin{% endcomment %}{% include 'ly-title' with page %}{{ ly_translation }}{% comment %}ly_code_replace_end{% endcomment %}</h1>
+                    <div class="page-content">
+                        <div class="rte">
+                            {% comment %}ly_code_replace_for_[page.content]_begin{% endcomment %}{% include 'ly-content' with page %}{{ly_translation}}{% comment %}ly_code_replace_end{% endcomment %}
+                        </div>
+                    </div>
+              	</div>
+			</section>
+		</div>
+	</div>
+</section><div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="list">
+            <div class="look-container"><div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'total-look-2':{{ pages.total-look-2.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/jaggad-asia.myshopify.com/mod_media_lightbox_list_d1234.js?t=1520409392";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>

@@ -1,0 +1,24 @@
+{% include 'breadcrumb' %}
+<header class="page-header">
+    <h2>{{ page.title }}</h2>
+</header>
+
+{% comment %}
+  Regular page content goes here.
+{% endcomment %}
+<div class="rte">
+  <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'kids-lookbook-bts-ii':{{ pages.kids-lookbook-bts-ii.content | json }},'mens-lookbook-mott-street':{{ pages.mens-lookbook-mott-street.content | json }},'mens-lookbook-the-hilltop':{{ pages.mens-lookbook-the-hilltop.content | json }},'track-follow':{{ pages.track-follow.content | json }},'mens-lookbook-so-fresh-so-clean':{{ pages.mens-lookbook-so-fresh-so-clean.content | json }},'mens-lookbook-fall-into-autumn':{{ pages.mens-lookbook-fall-into-autumn.content | json }},'mens-lookbook-all-set-for-fall':{{ pages.mens-lookbook-all-set-for-fall.content | json }},'mens-lookbook-track-and-field':{{ pages.mens-lookbook-track-and-field.content | json }},'mens-lookbook-eyes-on-the-rise':{{ pages.mens-lookbook-eyes-on-the-rise.content | json }},'denim-daze':{{ pages.denim-daze.content | json }},'mens-lookbook-line-of-scrimmage':{{ pages.mens-lookbook-line-of-scrimmage.content | json }},'kids-lookbook-school-of-hard-knocks':{{ pages.kids-lookbook-school-of-hard-knocks.content | json }},'mens-lookbook-soho-stroll':{{ pages.mens-lookbook-soho-stroll.content | json }},'kids-lookbook-1':{{ pages.kids-lookbook-1.content | json }},'kids-lookbook-bts':{{ pages.kids-lookbook-bts.content | json }},'high-release':{{ pages.high-release.content | json }},'mens-lookbook-let-the-streets-light':{{ pages.mens-lookbook-let-the-streets-light.content | json }},'mens-lookbook-brace-yourself':{{ pages.mens-lookbook-brace-yourself.content | json }},'kids-lookbook-joys-in-life':{{ pages.kids-lookbook-joys-in-life.content | json }},'working-title':{{ pages.working-title.content | json }},'mens-lookbook-concrete-canvas':{{ pages.mens-lookbook-concrete-canvas.content | json }},'kids-lookbook-mini-moguls':{{ pages.kids-lookbook-mini-moguls.content | json }},'mens-lookbook-black-label':{{ pages.mens-lookbook-black-label.content | json }},'mens-lookbook-summer-steez':{{ pages.mens-lookbook-summer-steez.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/jcdenim.myshopify.com/mod_media_lightbox_list_f451b.js?t=1593206155";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>

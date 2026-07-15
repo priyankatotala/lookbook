@@ -1,0 +1,32 @@
+<!-- /templates/page.liquid -->
+<div class="grid">
+  <div class="grid__item">
+
+    <header class="section-header text-center">
+      <h1>{{ page.title }}</h1>
+      <hr class="hr--small">
+    </header>
+
+    <div class="grid">
+      <div class="grid__item">
+        <div class="rte rte--nomargin rte--indented-images">
+          <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'spring-20':{{ pages.spring-20.content | json }},'holiday-19':{{ pages.holiday-19.content | json }},'fall-19':{{ pages.fall-19.content | json }},'ripndip-teddy-fresh':{{ pages.ripndip-teddy-fresh.content | json }},'summer-19':{{ pages.summer-19.content | json }},'spring-2019':{{ pages.spring-2019.content | json }},'fall-2018':{{ pages.fall-2018.content | json }},'summer-2018':{{ pages.summer-2018.content | json }},'spring-2018':{{ pages.spring-2018.content | json }},'holiday-2017':{{ pages.holiday-2017.content | json }},'fall-2017':{{ pages.fall-2017.content | json }},'summer-2017':{{ pages.summer-2017.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/ripndip.myshopify.com/mod_media_lightbox_list_94432.js?t=1581469496";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

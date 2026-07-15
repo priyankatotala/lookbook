@@ -1,0 +1,48 @@
+<div class="lookbooktemplate">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ol class="breadcrumb">
+				<li><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="{{ shop.url }}/pages/lookbooks/" title="{{ shop.name | escape }}" itemprop="url"><span itemprop="title">Lookbooks</span></a></span> </li>
+				<li><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="{{ page.url }}" title="{{ page.title | escape }}" itemprop="url"><span itemprop="title">{{ page.title }}</span></a></span>  </li>
+		     
+				</ol>			
+			</div>
+		</div>	
+			</div>
+	<div class="page-content order-lookup">	
+
+		 <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page..content }}
+</div>
+<script type="text/javascript">
+var modlookbook_exist=false;
+  var modlookbook_url = 'http://shopifyexpert.com.au/lookbook/assets/templates/ldpshoes.myshopify.com/mod_media_lightbox_470a4.js?t=1398193180';
+    var modlookbook_scripts = document.getElementsByTagName('script');
+    for (var i = modlookbook_scripts.length; i--;) {
+      if (modlookbook_scripts[i].src == modlookbook_url){
+        modlookbook_exist=true;
+      };
+    }
+  if(!modlookbook_exist){
+    Shopify.money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http://shopifyexpert.com.au/lookbook/assets/templates/ldpshoes.myshopify.com/mod_media_lightbox_470a4.js?t=1398193180";
+    document.getElementsByTagName("head")[0].appendChild(s);
+    }
+</script>
+	
+	</div>	
+		
+
+
+
+
+</div>
+
+
+
+

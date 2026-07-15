@@ -1,0 +1,25 @@
+<section class="row-fluid">
+  <div class="container">
+   <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 middle-position">
+    <div class="row page-title">
+      <!--<h1>{{ page.title }}</h1>-->
+      {% if page.handle == 'essential-pant-guide' %}<h1 style="font-family: Lato, Sans; font-weight: 400;text-transform: initial;font-size: 24px;">{{ page.title }}</h1>{%endif %}
+    </div>
+    <div class="row rte">
+     <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/anatomie-store.myshopify.com/mod_media_lightbox_c6b7e{{page.id}}.js?t=1553211846";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script> 
+    </div>
+  </div>
+ </div>
+</section>
+

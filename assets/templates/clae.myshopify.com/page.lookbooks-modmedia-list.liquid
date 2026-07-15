@@ -1,0 +1,30 @@
+<h1 class="page-title">{{ page.title }}</h1>
+
+{% if page.handle == 'videos' %}
+	<ul class="blog-navigation">
+	  {% for link in linklists.blog-navigation.links %}
+	    <li>
+	      <a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+	    </li>
+	  {% endfor %}
+	</ul>
+{% endif %}
+
+{% include 'breadcrumbs' %}
+
+<div class="page-content rte">
+  <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'autumn-winter-2015-delivery-2':{{ pages.autumn-winter-2015-delivery-2.content | json }},'clae-x-commonwealth-hoffman':{{ pages.clae-x-commonwealth-hoffman.content | json }},'spring-summer-2016':{{ pages.spring-summer-2016.content | json }},'fall-winter-2016':{{ pages.fall-winter-2016.content | json }},'autumn-winter-17-new-horizons':{{ pages.autumn-winter-17-new-horizons.content | json }},'spring-summer-2017-on-the-road':{{ pages.spring-summer-2017-on-the-road.content | json }},'autumn-winter-in-the-city':{{ pages.autumn-winter-in-the-city.content | json }},'autumn-winter-nomad':{{ pages.autumn-winter-nomad.content | json }},'the-robinson-1':{{ pages.the-robinson-1.content | json }},'the-frazier-1':{{ pages.the-frazier-1.content | json }},'the-hoffman-autumn-2016':{{ pages.the-hoffman-autumn-2016.content | json }},'summer-2016':{{ pages.summer-2016.content | json }},'clae-x-publish-the-natural-state-1':{{ pages.clae-x-publish-the-natural-state-1.content | json }},'spring-2015-style-guide-1':{{ pages.spring-2015-style-guide-1.content | json }},'the-quincy-1':{{ pages.the-quincy-1.content | json }},'the-hoffman-1':{{ pages.the-hoffman-1.content | json }},'clae-perspectives-shin-okuda-1':{{ pages.clae-perspectives-shin-okuda-1.content | json }},'early-spring-2015-the-graduate-1':{{ pages.early-spring-2015-the-graduate-1.content | json }},'liful-x-clae-capsule-collection-1':{{ pages.liful-x-clae-capsule-collection-1.content | json }},'clae-x-durimel-aw15-del2':{{ pages.clae-x-durimel-aw15-del2.content | json }},'autumn-2014-noir-collection-1':{{ pages.autumn-2014-noir-collection-1.content | json }},'autumn-2015':{{ pages.autumn-2015.content | json }},'the-hopper':{{ pages.the-hopper.content | json }},'autumn-2015-del-1':{{ pages.autumn-2015-del-1.content | json }},'autumn-2016':{{ pages.autumn-2016.content | json }},'autumn-high-low':{{ pages.autumn-high-low.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/clae.myshopify.com/mod_media_lightbox_list_49775.js?t=1510838920";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>

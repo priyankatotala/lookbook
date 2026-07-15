@@ -1,0 +1,24 @@
+<article id="{{page.handle}}" class="page hentry">
+	<header>
+		<div class="title-bar custom-font">
+			<h1>{{ page.title }}</h1>
+			<div class="clear"></div>
+		</div>
+	</header>
+	<section class="entry-content">
+		<div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'celebrity-1':{{ pages.celebrity-1.content | json }},'womens-health':{{ pages.womens-health.content | json }},'health':{{ pages.health.content | json }},'redbook-april-2018':{{ pages.redbook-april-2018.content | json }},'w-magazine-march-2018':{{ pages.w-magazine-march-2018.content | json }},'glamour-march-2018':{{ pages.glamour-march-2018.content | json }},'ocean-drive':{{ pages.ocean-drive.content | json }},'press-1':{{ pages.press-1.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/jennifer-zeuner-jewelry.myshopify.com/mod_media_lightbox_list_7f44b.js?t=1534515199";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+	</section>
+</article>

@@ -1,0 +1,24 @@
+<!-- /templates/page.liquid -->
+<div class="wrapper page-margin">
+  <div class="grid">
+    <div class="grid__item">
+      <h1 class="text-center h2">{{ page.title }}</h1>
+      <div class="rte">
+        <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'rugs':{{ pages.rugs.content | json }},'tablecloths':{{ pages.tablecloths.content | json }},'original-art':{{ pages.original-art.content | json }},'home-decor':{{ pages.home-decor.content | json }},'pillow-collection-2':{{ pages.pillow-collection-2.content | json }},'test-modapps':{{ pages.test-modapps.content | json }},'art-by-claire-cushman':{{ pages.art-by-claire-cushman.content | json }},'pillow-collection-3':{{ pages.pillow-collection-3.content | json }},'art-by-pauline':{{ pages.art-by-pauline.content | json }},'pillows-square-june-2020':{{ pages.pillows-square-june-2020.content | json }},'kids-and-baby-july-2020':{{ pages.kids-and-baby-july-2020.content | json }},'kitchen-and-dining-1':{{ pages.kitchen-and-dining-1.content | json }},'linen-bedding':{{ pages.linen-bedding.content | json }},'quilts':{{ pages.quilts.content | json }},'furn':{{ pages.furn.content | json }},'quilts-and-throws':{{ pages.quilts-and-throws.content | json }},'vintage-rugs':{{ pages.vintage-rugs.content | json }},'tabletop':{{ pages.tabletop.content | json }},'cmc':{{ pages.cmc.content | json }},'desk':{{ pages.desk.content | json }},'room-accent':{{ pages.room-accent.content | json }},'rug-1113':{{ pages.rug-1113.content | json }},'quilt-march-19':{{ pages.quilt-march-19.content | json }},'linen-bedding-march-2019':{{ pages.linen-bedding-march-2019.content | json }},'linen-bedding-march-2019-three':{{ pages.linen-bedding-march-2019-three.content | json }},'bedding-march-2019':{{ pages.bedding-march-2019.content | json }},'pillows-june-2020':{{ pages.pillows-june-2020.content | json }},'pillows-rect-2-june-2020':{{ pages.pillows-rect-2-june-2020.content | json }},'bedding-juen-2020':{{ pages.bedding-juen-2020.content | json }},'quilts-june-2020':{{ pages.quilts-june-2020.content | json }},'linen-bedding-june-2020':{{ pages.linen-bedding-june-2020.content | json }},'vases-2-june-2020':{{ pages.vases-2-june-2020.content | json }},'home-decor-june-2020':{{ pages.home-decor-june-2020.content | json }},'table-linens-june-2020':{{ pages.table-linens-june-2020.content | json }},'dining-c-june-2020':{{ pages.dining-c-june-2020.content | json }},'napkins-june-b-2020':{{ pages.napkins-june-b-2020.content | json }},'trays-june-2020':{{ pages.trays-june-2020.content | json }},'rugs-june-2020':{{ pages.rugs-june-2020.content | json }},'tea-towels-juen-2020':{{ pages.tea-towels-juen-2020.content | json }},'outdoor-furniture-june-2020':{{ pages.outdoor-furniture-june-2020.content | json }},'quilts-july-2020':{{ pages.quilts-july-2020.content | json }},'collection-baskets-july-2020':{{ pages.collection-baskets-july-2020.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/collyersmansion.myshopify.com/mod_media_lightbox_list_a75e9.js?t=1595356790";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+      </div>
+    </div>
+  </div>
+</div>

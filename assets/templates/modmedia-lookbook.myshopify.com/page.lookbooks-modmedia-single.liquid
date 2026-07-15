@@ -1,0 +1,18 @@
+{% include 'breadcrumb' %}
+<h1>{{ page.title }}</h1>
+<div class="wysiwyg">
+  <div id="modmedia-lookbooks">
+            <h1>{{ page.title }}</h1>
+            {{ page.content }}
+            <div id="lookbook-modmedia-container">
+            <ul></ul>
+            </div>
+</div>
+<script type="text/javascript">
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = 'http://dev.modmedia.com.au/lookbook/lookbook/load/{{ shop.domain | escape }}/{{ page.id }}/d435a/fa5e5af556cfc88157c54a9be8ce216613e47236';
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+	
+</div>

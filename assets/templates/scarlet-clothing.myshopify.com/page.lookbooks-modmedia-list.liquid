@@ -1,0 +1,17 @@
+<div id="page" class="desktop-12 tablet-6 mobile-3" data-section-id="{{ section.id }}">
+  <h1>{{ page.title }}</h1>
+  <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'spring-lookbook-2019':{{ pages.spring-lookbook-2019.content | json }},'lookbook-february-2019':{{ pages.lookbook-february-2019.content | json }},'thank-you-next-year-nye-lookbook-2018':{{ pages.thank-you-next-year-nye-lookbook-2018.content | json }},'holiday-lookbook-2018':{{ pages.holiday-lookbook-2018.content | json }},'color-pop-lookbook-october-2018':{{ pages.color-pop-lookbook-october-2018.content | json }},'back-in-session-lookbook-august-2018':{{ pages.back-in-session-lookbook-august-2018.content | json }},'heat-wave-lookbook-july-2018':{{ pages.heat-wave-lookbook-july-2018.content | json }},'summer-state-of-mind-lookbook-u2022-june-2018':{{ pages.summer-state-of-mind-lookbook-u2022-june-2018.content | json }},'abc':{{ pages.abc.content | json }},'seaside-irl-lookbook-april-2018':{{ pages.seaside-irl-lookbook-april-2018.content | json }},'spring-lookbook-2018':{{ pages.spring-lookbook-2018.content | json }},'spring-break-swim-lookbook-2018':{{ pages.spring-break-swim-lookbook-2018.content | json }},'new-years-eve-2018-lookbook':{{ pages.new-years-eve-2018-lookbook.content | json }},'holiday-gift-guide-2017':{{ pages.holiday-gift-guide-2017.content | json }},'its-lit-holiday-lookbook-2017':{{ pages.its-lit-holiday-lookbook-2017.content | json }},'cold-rush-lookbook-november-2017':{{ pages.cold-rush-lookbook-november-2017.content | json }},'puff-daddy-lookbook-november-2017':{{ pages.puff-daddy-lookbook-november-2017.content | json }},'nothing-fair-about-it-lookbook-october-2017':{{ pages.nothing-fair-about-it-lookbook-october-2017.content | json }},'mini-lookbook-fall-2017':{{ pages.mini-lookbook-fall-2017.content | json }},'fall-lookbook-2017':{{ pages.fall-lookbook-2017.content | json }},'off-duty-lookbook-may-2017':{{ pages.off-duty-lookbook-may-2017.content | json }},'festival-lookbook-2017':{{ pages.festival-lookbook-2017.content | json }},'spring-lookbook':{{ pages.spring-lookbook.content | json }},'supreme-team-lookbook-u2022-january-2017':{{ pages.supreme-team-lookbook-u2022-january-2017.content | json }},'how-to-holiday-holiday-lookbook-2016':{{ pages.how-to-holiday-holiday-lookbook-2016.content | json }},'fall-lookbook-2016':{{ pages.fall-lookbook-2016.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/scarlet-clothing.myshopify.com/mod_media_lightbox_list_574d5.js?t=1572281567";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>

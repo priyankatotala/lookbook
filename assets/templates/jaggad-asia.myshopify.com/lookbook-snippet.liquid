@@ -1,0 +1,31 @@
+{% include 'breadcrumb' %}
+<div class="container"><div class="line-home line-style-1"></div></div>
+<section id="columns" class="columns-container">
+	<div class="container">
+		<div class="row">
+			<section id="center_column" class="col-sm-12 col-md-12">
+              	<div class="page-wrap">
+					<h1 class="page-header bottom-indent">{{ page.title }}</h1>
+                    <div class="page-content">
+                        <div class="rte">
+                            <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.total-look.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/jaggad-asia.myshopify.com/mod_media_lightbox_d1234247952584.js?t=1490260439";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+                        </div>
+                    </div>
+              	</div>
+			</section>
+		</div>
+	</div>
+</section>

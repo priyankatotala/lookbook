@@ -1,0 +1,32 @@
+        <section class="page">
+            <div class="page__inner">
+
+                <div class="page__text{% if settings.use_footer %} hasfooter{% endif %} rte">
+                	<h1>{{ page.title }}</h1>
+                    <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            </div>
+</div>
+{{ page.content }}
+<script type="text/javascript">
+var modlookbook_exist=false;
+  var modlookbook_url = 'http://shopifyexpert.com.au/lookbook/assets/templates/2040breezewood.myshopify.com/mod_media_lightbox_list_3e156.js?t=1400117605';
+    var modlookbook_scripts = document.getElementsByTagName('script');
+    for (var i = modlookbook_scripts.length; i--;) {
+      if (modlookbook_scripts[i].src == modlookbook_url){
+        modlookbook_exist=true;
+      };
+    }
+  if(!modlookbook_exist){
+Shopify.money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'2040-breezewood':{{ pages.2040-breezewood.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http://shopifyexpert.com.au/lookbook/assets/templates/2040breezewood.myshopify.com/mod_media_lightbox_list_3e156.js?t=1400117605";
+    document.getElementsByTagName("head")[0].appendChild(s);
+}
+</script>
+                </div>
+
+            </div>
+        </section>

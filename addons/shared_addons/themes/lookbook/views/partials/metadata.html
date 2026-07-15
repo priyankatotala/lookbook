@@ -1,0 +1,36 @@
+<!-- Meta data -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+{{ theme:favicon file="favicon2.ico" }}
+{{ theme:favicon file="favicon2.png" }}
+{{ theme:css file="jquery-ui.css" }}
+{{ theme:css file="jquery.highlight.css" }}
+{{ theme:css file="magnific.css" }}
+{{ theme:css file="jasny-bootstrap.css" }}
+{{ theme:css file="styles.css" }}
+{{ theme:js file="libs/jquery.js" }}
+{{ theme:js file="libs/jquery-ui.js" }}
+{{ theme:js file="jquery.ui.touch-punch.min.js" }}
+{{ theme:js file="jasny-bootstrap.min.js" }}
+{{ theme:js file="bootstrap-switch.js" }}
+{{ theme:js file="jquery.highlight.js" }}
+{{ theme:js file="functions.js" }}
+{{ theme:js file="jquery.magnific-popup.min.js" }}
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('pre.code').highlight({source:1, zebra:false, indent:'space', list:'ol'});
+    });
+</script>
+{{ template:metadata }}
+<?php if(isset($jsapi)){?>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<?php } ?>
+<script>
+    var BASE_URL='<?php echo BASE_URL;?>';
+    var SHARED_ADDONPATH='<?php echo SHARED_ADDONPATH;?>';
+</script>
+<title>{{ settings:site_name }} &bull; {{ template:title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- CSS Stylesheets -->

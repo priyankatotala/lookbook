@@ -1,0 +1,24 @@
+<div class="Container">
+  <header class="PageHeader">
+    <div class="SectionHeader SectionHeader--center">
+      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+    </div>
+  </header>
+
+  
+    <div id="modmedia-lookbooks" class="list">
+                            <div id="lookbook-modmedia-container">
+                            Loading...
+                            </div>
+                </div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+                {{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+                <script type="text/javascript">
+                var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+                var pages_content = {'core-sport':{{ pages.core-sport.content | json }},'core-swim':{{ pages.core-swim.content | json }},'fall-24-sport':{{ pages.fall-24-sport.content | json }},'summer-24':{{ pages.summer-24.content | json }},'spring-26':{{ pages.spring-26.content | json }},'pre-spring-sport-24':{{ pages.pre-spring-sport-24.content | json }},'summer-24':{{ pages.summer-24.content | json }},'spring-25':{{ pages.spring-25.content | json }},'fall-23-sport':{{ pages.fall-23-sport.content | json }},'pre-spring-23-sport':{{ pages.pre-spring-23-sport.content | json }},'resort-24':{{ pages.resort-24.content | json }},'holiday-22':{{ pages.holiday-22.content | json }},'summer-22-sport':{{ pages.summer-22-sport.content | json }},'summer-23':{{ pages.summer-23.content | json }},'spring-22-swim':{{ pages.spring-22-swim.content | json }},'spring-22-sport':{{ pages.spring-22-sport.content | json }},'lounge-22':{{ pages.lounge-22.content | json }},'resort-22-sport':{{ pages.resort-22-sport.content | json }},'resort-22':{{ pages.resort-22.content | json }},'lounge-21':{{ pages.lounge-21.content | json }},'fall-22-sport':{{ pages.fall-22-sport.content | json }},'summer-23':{{ pages.summer-23.content | json }},'spring-21':{{ pages.spring-21.content | json }},'spring-21-sport':{{ pages.spring-21-sport.content | json }},'resort-24':{{ pages.resort-24.content | json }},'resort-22':{{ pages.resort-22.content | json }},'summer-20':{{ pages.summer-20.content | json }},'summer-20-sport':{{ pages.summer-20-sport.content | json }},'spring-24':{{ pages.spring-24.content | json }},'resort-23':{{ pages.resort-23.content | json }},'fall-19-sport-2':{{ pages.fall-19-sport-2.content | json }},'summer-21':{{ pages.summer-21.content | json }},'spring-23':{{ pages.spring-23.content | json }},'spring-19-sport':{{ pages.spring-19-sport.content | json }},'resort-21':{{ pages.resort-21.content | json }},'summer-22':{{ pages.summer-22.content | json }},'spring-17':{{ pages.spring-17.content | json }}};
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.src = "https://modapps2.com.au/lookbook/assets/templates/gigi-c.myshopify.com/mod_media_lightbox_list_4bd66.js?t=1728141452";
+                    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+  
+</div>

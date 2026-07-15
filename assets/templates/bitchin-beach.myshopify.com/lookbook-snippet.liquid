@@ -1,0 +1,21 @@
+<div class="sixteen columns clearfix collection_nav">
+  <h1 class="collection_title">
+    {{ page.title }}
+  </h1>
+</div>
+
+<div class="sixteen columns page">
+    <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            </div>
+            {{ page.lookbooks.content }}
+</div>
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'boho-babe-gone-bad':{{ pages.boho-babe-gone-bad.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/bitchin-beach.myshopify.com/mod_media_lightbox_list_3762c.js?t=1410032701";
+    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+</div>

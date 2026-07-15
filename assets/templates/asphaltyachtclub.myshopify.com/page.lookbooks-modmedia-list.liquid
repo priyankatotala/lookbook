@@ -1,0 +1,20 @@
+<div class="page-content">
+  <h1 class="page-title">{{ page.title }}</h1>
+
+  <div class="rte">
+    <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'anti':{{ pages.anti.content | json }},'mondial-collection':{{ pages.mondial-collection.content | json }},'utilitarian-collection':{{ pages.utilitarian-collection.content | json }},'sotw-collection':{{ pages.sotw-collection.content | json }},'world-colors-collection':{{ pages.world-colors-collection.content | json }},'track-collection-1':{{ pages.track-collection-1.content | json }},'high-society-collection':{{ pages.high-society-collection.content | json }},'magnolia-collection':{{ pages.magnolia-collection.content | json }},'resort-collection':{{ pages.resort-collection.content | json }},'international-affair':{{ pages.international-affair.content | json }},'international-vacation-collection':{{ pages.international-vacation-collection.content | json }},'lawyer-collection-drop-1':{{ pages.lawyer-collection-drop-1.content | json }},'core-collection':{{ pages.core-collection.content | json }},'bloom-collection':{{ pages.bloom-collection.content | json }},'too-hort-x-asphalt':{{ pages.too-hort-x-asphalt.content | json }},'trenches-collection':{{ pages.trenches-collection.content | json }},'essentials-collection':{{ pages.essentials-collection.content | json }},'drop-1-collection-summer-19':{{ pages.drop-1-collection-summer-19.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/asphaltyachtclub.myshopify.com/mod_media_lightbox_list_24445.js?t=1569464725";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+  </div>
+</div>

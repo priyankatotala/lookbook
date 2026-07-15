@@ -1,0 +1,21 @@
+<section class="page">
+  <div class="page__inner">
+    <div class="page__text{% if settings.use_footer %} hasfooter{% endif %} rte">
+      <h1>{{ page.title }}</h1>
+        <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'spring-lookbook':{{ pages.spring-lookbook.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/cd-lookbook.myshopify.com/mod_media_lightbox_list_d706c.js?t=1429538202";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+    </div>
+  </div>
+</section>

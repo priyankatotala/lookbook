@@ -1,0 +1,1 @@
+var myAppJavaScriptmodLookbook = function($) {(function ($, document, undefined) {$('#lookbook-modmedia-container').html('The Lookbook app has been uninstalled, please remove the code from this page.');})(modlookbookjQuery, document); };set_modlookbookjquery();

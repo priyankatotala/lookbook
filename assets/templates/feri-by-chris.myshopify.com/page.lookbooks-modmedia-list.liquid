@@ -1,0 +1,31 @@
+<div class="sixteen columns clearfix collection_nav">
+  <h1 class="collection_title">
+    {{ page.title }}
+  </h1>
+</div>
+
+<div class="sixteen columns page">
+    <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            </div>
+</div>
+{{ page.content }}
+<script type="text/javascript">
+var modlookbook_exist=false;
+  var modlookbook_url = 'http://shopifyexpert.com.au/lookbook/assets/templates/feri-by-chris.myshopify.com/mod_media_lightbox_list_61a2a.js?t=1396227532';
+    var modlookbook_scripts = document.getElementsByTagName('script');
+    for (var i = modlookbook_scripts.length; i--;) {
+      if (modlookbook_scripts[i].src == modlookbook_url){
+        modlookbook_exist=true;
+      };
+    }
+  if(!modlookbook_exist){
+Shopify.money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'feri-lookbook-2014':{{ pages.feri-lookbook-2014.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http://shopifyexpert.com.au/lookbook/assets/templates/feri-by-chris.myshopify.com/mod_media_lightbox_list_61a2a.js?t=1396227532";
+    document.getElementsByTagName("head")[0].appendChild(s);
+}
+</script>
+</div>

@@ -1,0 +1,22 @@
+<div class="spacing--4x">
+  <article class="page-wrapper spacing--5">
+    <h1 class="page-title font--heading text-align--center">{{ page.title }}</h1>
+    <div class="spacer spacing--4y"></div>
+    <div class="rte-content content">
+      <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'resort-2019':{{ pages.resort-2019.content | json }},'fall-2018':{{ pages.fall-2018.content | json }},'pre-fall-2018':{{ pages.pre-fall-2018.content | json }},'spring-2018':{{ pages.spring-2018.content | json }},'resort-2018':{{ pages.resort-2018.content | json }},'fall-2017':{{ pages.fall-2017.content | json }},'pre-fall-2017':{{ pages.pre-fall-2017.content | json }},'spring-2016':{{ pages.spring-2016.content | json }},'resort-2016':{{ pages.resort-2016.content | json }},'fall-2015':{{ pages.fall-2015.content | json }},'pre-fall-2016':{{ pages.pre-fall-2016.content | json }},'spring-2017':{{ pages.spring-2017.content | json }},'resort-2015':{{ pages.resort-2015.content | json }},'fall-2016':{{ pages.fall-2016.content | json }},'pre-fall-2014':{{ pages.pre-fall-2014.content | json }},'spring-2013':{{ pages.spring-2013.content | json }},'resort-2013':{{ pages.resort-2013.content | json }},'fall-2013':{{ pages.fall-2013.content | json }},'pre-fall-2013':{{ pages.pre-fall-2013.content | json }},'press-1':{{ pages.press-1.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/yigal-azrouel.myshopify.com/mod_media_lightbox_list_169fa.js?t=1505404455";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+    </div>
+  </article>
+</div>

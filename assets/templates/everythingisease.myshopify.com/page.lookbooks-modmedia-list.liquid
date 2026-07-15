@@ -1,0 +1,22 @@
+
+  <div class="container" id="page-stories">
+    <div class="row">
+		<div class="twelve columns">
+          <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'soft':{{ pages.soft.content | json }},'bold':{{ pages.bold.content | json }},'still-motion':{{ pages.still-motion.content | json }},'summer-18':{{ pages.summer-18.content | json }},'ease-fw17':{{ pages.ease-fw17.content | json }},'soft-compositions':{{ pages.soft-compositions.content | json }},'lightness-s-s17':{{ pages.lightness-s-s17.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/everythingisease.myshopify.com/mod_media_lightbox_list_5d34b.js?t=1559590475";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+
+  		</div>
+	</div>
+</div>

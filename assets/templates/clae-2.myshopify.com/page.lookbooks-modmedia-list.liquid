@@ -1,0 +1,30 @@
+<h1 class="page-title">{{ page.title }}</h1>
+
+{% if page.handle == 'videos' %}
+	<ul class="blog-navigation">
+	  {% for link in linklists.blog-navigation.links %}
+	    <li>
+	      <a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+	    </li>
+	  {% endfor %}
+	</ul>
+{% endif %}
+
+{% include 'breadcrumbs' %}
+
+<div class="page-content rte">
+  <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'the-frazier-1':{{ pages.the-frazier-1.content | json }},'the-hopper':{{ pages.the-hopper.content | json }},'autumn-2015':{{ pages.autumn-2015.content | json }},'autumn-2015-high-low':{{ pages.autumn-2015-high-low.content | json }},'autumn-winter-2015-delivery-2':{{ pages.autumn-winter-2015-delivery-2.content | json }},'clae-x-commonwealth-hoffman':{{ pages.clae-x-commonwealth-hoffman.content | json }},'rugged-outdoors':{{ pages.rugged-outdoors.content | json }},'spring-2016':{{ pages.spring-2016.content | json }},'autumn-2015-del-1':{{ pages.autumn-2015-del-1.content | json }},'the-frazier':{{ pages.the-frazier.content | json }},'the-hoffman-autumn-2015':{{ pages.the-hoffman-autumn-2015.content | json }},'summer-2015':{{ pages.summer-2015.content | json }},'clae-x-publish-the-natural-state':{{ pages.clae-x-publish-the-natural-state.content | json }},'spring-2015-style-guide':{{ pages.spring-2015-style-guide.content | json }},'the-quincy':{{ pages.the-quincy.content | json }},'the-hoffman':{{ pages.the-hoffman.content | json }},'clae-perspectives-shin-okuda':{{ pages.clae-perspectives-shin-okuda.content | json }},'early-spring-2015-the-graduate':{{ pages.early-spring-2015-the-graduate.content | json }},'liful-x-clae-capsule-collection':{{ pages.liful-x-clae-capsule-collection.content | json }},'clae-x-durimel-aw14-del2':{{ pages.clae-x-durimel-aw14-del2.content | json }},'autumn-2014-noir-collection':{{ pages.autumn-2014-noir-collection.content | json }},'autumn-2014':{{ pages.autumn-2014.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/clae-2.myshopify.com/mod_media_lightbox_list_582b8.js?t=1456433949";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>

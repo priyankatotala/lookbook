@@ -1,0 +1,38 @@
+<div class="container page-content">
+
+ 
+  <h1 class="page-title">{{ page.title }}</h1>
+  
+  <div class="rte"><div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/lujo.myshopify.com/mod_media_lightbox_aca8b{{page.id}}.js?t=1484174552";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>
+
+</div>
+
+
+{%comment%}
+<div class="container page-content">
+
+  {% if page.title == "Shipping, duties & taxes." %} 
+  <h1 class="shipping-title"id="shipping-title">{{page.title}}</h1>
+  {% else %}
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% endif %}
+  {% if page.title == "Shipping, duties & taxes." %}
+  <div id="info-wrapper">
+  	<div class="rte">{{ page.content | replace: 'fullwidth"', '" data-fullwidth="true"' }}</div>
+  </div>
+  {% else %}
+  <div class="rte">{{ page.content | replace: 'fullwidth"', '" data-fullwidth="true"' }}</div>
+{% endif %}
+</div>
+{%endcomment%}

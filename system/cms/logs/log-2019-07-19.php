@@ -1,0 +1,31 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2019-07-19 10:20:44 --> Severity: Notice  --> Undefined property: CI::$_error_message /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/system/cms/libraries/MX/Controller.php 57
+ERROR - 2019-07-19 10:20:44 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 3
+ERROR - 2019-07-19 10:20:44 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 19
+ERROR - 2019-07-19 14:15:21 --> Severity: Notice  --> Undefined property: CI::$_error_message /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/system/cms/libraries/MX/Controller.php 57
+ERROR - 2019-07-19 14:15:21 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 3
+ERROR - 2019-07-19 14:15:21 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 19
+ERROR - 2019-07-19 14:16:04 --> Severity: Notice  --> Undefined property: CI::$_error_message /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/system/cms/libraries/MX/Controller.php 57
+ERROR - 2019-07-19 14:16:04 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 3
+ERROR - 2019-07-19 14:16:04 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 19
+ERROR - 2019-07-19 14:16:12 --> Severity: Notice  --> Undefined property: CI::$_error_message /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/system/cms/libraries/MX/Controller.php 57
+ERROR - 2019-07-19 14:16:12 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 3
+ERROR - 2019-07-19 14:16:12 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 19
+ERROR - 2019-07-19 14:16:20 --> Severity: Notice  --> Undefined property: CI::$_error_message /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/system/cms/libraries/MX/Controller.php 57
+ERROR - 2019-07-19 14:16:20 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 3
+ERROR - 2019-07-19 14:16:20 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 19
+ERROR - 2019-07-19 14:16:39 --> Severity: Notice  --> Undefined property: CI::$_error_message /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/system/cms/libraries/MX/Controller.php 57
+ERROR - 2019-07-19 14:16:39 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 3
+ERROR - 2019-07-19 14:16:39 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 19
+ERROR - 2019-07-19 14:16:46 --> Severity: Notice  --> Undefined property: CI::$_error_message /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/system/cms/libraries/MX/Controller.php 57
+ERROR - 2019-07-19 14:16:46 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 3
+ERROR - 2019-07-19 14:16:46 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 19
+ERROR - 2019-07-19 14:19:23 --> Severity: Notice  --> Undefined property: CI::$_error_message /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/system/cms/libraries/MX/Controller.php 57
+ERROR - 2019-07-19 14:19:23 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 3
+ERROR - 2019-07-19 14:19:23 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 19
+ERROR - 2019-07-19 14:19:30 --> Severity: Notice  --> Undefined property: CI::$_error_message /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/system/cms/libraries/MX/Controller.php 57
+ERROR - 2019-07-19 14:19:30 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 3
+ERROR - 2019-07-19 14:19:30 --> Severity: Notice  --> Undefined variable: data /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/customers/views/error.php 19
+ERROR - 2019-07-19 16:54:40 --> Severity: Notice  --> Undefined variable: lookbooks_page_id /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/form.php 19
+ERROR - 2019-07-19 16:56:46 --> Severity: Notice  --> Undefined variable: lookbooks_page_id /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/form.php 19

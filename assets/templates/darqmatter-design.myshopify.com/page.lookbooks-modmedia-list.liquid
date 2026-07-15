@@ -1,0 +1,26 @@
+<section class="section">
+  <div class="container content main-wrapper">
+    <div class="one-whole column page">
+      <h1 class="center">
+        {{ page.title }}
+      </h1>
+      <div class="feature_divider"></div>
+    </div>
+    
+    {% render 'page-multi-column', content: page.content %}
+  </div>
+</section>
+<div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="list">
+                                <div class="look-container"><div id="lookbook-modmedia-container">
+                                Loading...
+                                </div>
+                    </div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+                    {{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+                    <script type="text/javascript">
+                    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+                    var pages_content = {'dmt-collection':{{ pages.dmt-collection.content | json }},'metamorphosis':{{ pages.metamorphosis.content | json }},'theconspiracy-collection':{{ pages.theconspiracy-collection.content | json }},'lucid-dreaming-fall14':{{ pages.lucid-dreaming-fall14.content | json }}};
+                        var s = document.createElement("script");
+                        s.type = "text/javascript";
+                        s.src = "https://modapps2.com.au/lookbook/assets/templates/darqmatter-design.myshopify.com/mod_media_lightbox_list_cf265.js?t=1643019409";
+                        document.getElementsByTagName("head")[0].appendChild(s);
+                    </script></div>

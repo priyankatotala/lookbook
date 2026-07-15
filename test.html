@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+
+ $.ajax({url: 'https://nu-by-staff-en.myshopify.com\/admin\/recurring_application_charges.json',
+    data:{
+		  recurring_application_charge: {
+        name: "Super Mega Plan",
+        price: "15.00",
+        return_url: "http:\/\/shopifyexpert.com.au\/lookbook",        
+        trial_days: "5",
+      }
+			
+  },
+  type:"json",
+	method:"POST",
+	success: function(result){
+		 alert("hii"+result);
+	}
+	});
+
+</script>
+</html>
+	

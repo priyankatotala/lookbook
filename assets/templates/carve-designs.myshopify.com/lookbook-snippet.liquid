@@ -1,0 +1,19 @@
+<div class="page-width">
+  {% include 'breadcrumbs' %}
+  <div class="rte">
+    <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.may-2019.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/carve-designs.myshopify.com/mod_media_lightbox_1e7fc23838621784.js?t=1573520573";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+  </div>
+</div>

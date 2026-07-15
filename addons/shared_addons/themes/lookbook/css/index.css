@@ -1,0 +1,85 @@
+/* 
+    Document   : styles
+    Created on : Jun 27, 2013, 4:35:08 PM
+    Author     : shen
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;      
+}
+body
+{
+    font-family: 'Open Sans',sans-serif;
+    background: #ed6647 url('../img/lookbook-logo.png') center center no-repeat;
+    background-attachment: fixed;
+}
+.home_contain{
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    color:#FFF;
+}
+.home_contain input[type=text], .home_contain input.form-control{
+    border:none;
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+.home_contain input[type=submit], .home_contain input.btn{
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-top-color: #FFF;
+    border-bottom-color: #FFF;
+    border-right-color: #FFF;
+    outline: none;
+}
+.home_contain input.btn:hover{
+    background:  #ed6647;    
+}
+/* loader */
+.loader{position: fixed;z-index: 3;margin: 0 auto;left: 0;right: 0;top: 50%;margin-top: -30px;width: 120px;height: 60px;list-style: none;}
+
+@-webkit-keyframes 'loadbars' {
+	0%{
+		height: 10px;
+		margin-top: 25px;
+	}
+	50%{
+		height:50px;
+		margin-top: 0px;
+	}
+	100%{
+		height: 10px;
+		margin-top: 25px;
+	}
+}
+@keyframes loadbars{
+	0%{
+		height: 10px;
+		margin-top: 25px;
+	}
+	50%{
+		height:50px;
+		margin-top: 0px;
+	}
+	100%{
+		height: 10px;
+		margin-top: 25px;
+	}
+}
+.loader li{background-color: #ed6647;width: 10px;height: 10px;float: right;margin-right: 5px;box-shadow: 0px 60px 15px rgba(255,255,255,0.9);border-radius:5px;border:1px solid #000;}
+.loader li:first-child{-webkit-animation: loadbars 1s ease-in-out infinite -0.4s;-moz-animation: loadbars 1s ease-in-out infinite -0.4s;animation: loadbars 1s ease-in-out infinite -0.4s;}
+.loader li:nth-child(2){-webkit-animation: loadbars 1s ease-in-out infinite -0.5s;-moz-animation: loadbars 1s ease-in-out infinite -0.5s;animation: loadbars 1s ease-in-out infinite -0.5s;}
+.loader li:nth-child(3){-webkit-animation: loadbars 1s ease-in-out infinite -0.6s;-moz-animation: loadbars 1s ease-in-out infinite -0.6s;animation: loadbars 1s ease-in-out infinite -0.6s;}
+.loader li:nth-child(4){-webkit-animation: loadbars 1s ease-in-out infinite -0.7s;-moz-animation: loadbars 1s ease-in-out infinite -0.7s;animation: loadbars 1s ease-in-out infinite -0.7s;}
+.loader li:nth-child(5){ -webkit-animation: loadbars 1s ease-in-out infinite -0.8s;-moz-animation: loadbars 1s ease-in-out infinite -0.8s;animation: loadbars 1s ease-in-out infinite -0.8s;}

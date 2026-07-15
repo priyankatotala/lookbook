@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        {{ theme:partial name="metadata" }}
+        <!--Start of Zopim Live Chat Script-->
+        <script type="text/javascript">
+        window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+        d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+        _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+        $.src="//v2.zopim.com/?4Cdg3IkHIWF7BhNQTnaRF9z4T2CRDTPx";z.t=+new Date;$.
+        type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+        </script>
+        <!--End of Zopim Live Chat Script-->
+    </head>
+    <body>
+        <div id='wrapper' class='container'>
+            <div id="header">
+                <div class="container">
+                        {{ theme:partial name="header" }}                
+                </div>
+            </div>
+            <div class="container main_content">
+                <?php if($this->session->userdata('theme_changed')){?>
+                <div class="alert alert-warning">
+                    We have detected that you may have changed your theme. If this is right please press the button to update the Theme to work with the Lookbook. <?php echo anchor('lookbook/update_store_theme','Update','class="btn btn-warning"');?>
+                </div>
+                <?php }?>
+                <?php if($this->session->flashdata('error')){?>
+                <div class="alert alert-danger">
+                    <?php echo $this->session->flashdata('error');?>
+                </div>
+                <?php }else{ ?>
+                <?php if($this->session->flashdata('success')){?>
+                <div class="alert alert-success">
+                        <?php echo $this->session->flashdata('success'); ?>
+                </div>
+                <?php }?>
+                <?php }?>
+                <!-- Content -->
+                <div id="content">
+                            {{ template:body }}
+                </div>                
+            </div>            
+        </div>
+        <!-- Footer -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    {{ theme:partial name="footer" }}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

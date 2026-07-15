@@ -1,0 +1,34 @@
+{% capture push_header %}
+  <div class="page push-header">
+    <div class="container">
+      <div class="page-navigation">
+        {% include 'breadcrumb' %}
+      </div>
+
+      <header class="page-header">
+        <h2 class="page-title">{{ page.title }}</h2>
+      </header>
+    </div>
+  </div>
+{% endcapture %}
+
+<div class="page">
+  <div class="container">
+    <section class="inner rte">
+      <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.hybridize-spring-15.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/pasduchas.myshopify.com/mod_media_lightbox_da06051105473.js?t=1439550211";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+    </section>
+  </div>
+</div>

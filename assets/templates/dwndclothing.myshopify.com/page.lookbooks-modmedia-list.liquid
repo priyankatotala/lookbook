@@ -1,0 +1,20 @@
+<div class="sixteen columns clearfix collection_nav">
+  <h1 class="collection_title">
+    {{ page.title }}
+  </h1>
+  <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'introducing-r13-culture-countered':{{ pages.introducing-r13-culture-countered.content | json }},'redone-perfectly-worn-perfectly-cut-perfectly-personalized':{{ pages.redone-perfectly-worn-perfectly-cut-perfectly-personalized.content | json }},'new-arrivals-faggasent-msgm-moschino':{{ pages.new-arrivals-faggasent-msgm-moschino.content | json }},'new-arrivals-thom-krom-mens-ss18-collection':{{ pages.new-arrivals-thom-krom-mens-ss18-collection.content | json }},'new-arrivals-thom-krom-womens-ss18-collection':{{ pages.new-arrivals-thom-krom-womens-ss18-collection.content | json }},'introducing-herman-an-experience-an-accessory-for-those-with-a-true-sense-of-style':{{ pages.introducing-herman-an-experience-an-accessory-for-those-with-a-true-sense-of-style.content | json }},'introducing-masnada-mercenary-elegence':{{ pages.introducing-masnada-mercenary-elegence.content | json }},'new-arrivals-juun-j-ss18-mens-collection':{{ pages.new-arrivals-juun-j-ss18-mens-collection.content | json }},'flash-sale-v2':{{ pages.flash-sale-v2.content | json }},'test-1':{{ pages.test-1.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/dwndclothing.myshopify.com/mod_media_lightbox_list_de8e1.js?t=1544219301";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+</div>
+

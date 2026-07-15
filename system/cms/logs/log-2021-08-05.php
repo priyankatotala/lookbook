@@ -1,0 +1,27 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2021-08-05 08:32:23 --> Page Missing: assets/templates/mariannasenchina.myshopify.com/mod_media_lightbox_e4c58235903122.js
+ERROR - 2021-08-05 09:42:03 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 10:21:31 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 11:36:38 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 11:53:59 --> Severity: Notice  --> Undefined variable: old_sort /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/dashboard.php 97
+ERROR - 2021-08-05 11:53:59 --> Severity: Warning  --> join(): Invalid arguments passed /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/dashboard.php 97
+ERROR - 2021-08-05 11:54:13 --> Severity: Notice  --> Undefined variable: lookbooks_page_id /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/form.php 19
+ERROR - 2021-08-05 11:55:24 --> Page Missing: assets/templates/alter-venomv.myshopify.com/mod_media_lightbox_b01e583820937383.js
+ERROR - 2021-08-05 11:56:59 --> Query error: Incorrect string value: '\xC5\x8Csaka...' for column 'data' at row 1 - Invalid query: INSERT INTO `default_uninstall_webhooks` (date, `shop`, `data`) VALUES (NOW(), 'alter-venomv.myshopify.com', '{\"id\":53146255527,\"name\":\"ALTER VENOMV\",\"email\":\"alter-venomv@evergreen-style.com\",\"domain\":\"alter-venomv.shop\",\"province\":\"Ōsaka\",\"country\":\"JP\",\"address1\":\"北区 本庄東1-9-17\",\"zip\":\"531-0074\",\"city\":\"大阪市\",\"source\":null,\"phone\":\"06-6371-3777\",\"latitude\":34.712441,\"longitude\":135.509598,\"primary_locale\":\"ja\",\"address2\":\"MIビル3階\",\"created_at\":\"2021-02-11T10:22:29+09:00\",\"updated_at\":\"2021-05-10T17:55:04+09:00\",\"country_code\":\"JP\",\"country_name\":\"Japan\",\"currency\":\"JPY\",\"customer_email\":\"alter-venomv@evergreen-style.com\",\"timezone\":\"(GMT+09:00) Asia\\/Tokyo\",\"iana_timezone\":\"Asia\\/Tokyo\",\"shop_owner\":\"株式会社エヴァーグリーン\",\"money_format\":\"¥{{amount_no_decimals}}\",\"money_with_currency_format\":\"¥{{amount_no_decimals}} JPY\",\"weight_unit\":\"kg\",\"province_code\":\"JP-27\",\"taxes_included\":true,\"auto_configure_tax_inclusivity\":null,\"tax_shipping\":null,\"county_taxes\":true,\"plan_display_name\":\"Basic Shopify\",\"plan_name\":\"basic\",\"has_discounts\":false,\"has_gift_cards\":false,\"myshopify_domain\":\"alter-venomv.myshopify.com\",\"google_apps_domain\":null,\"google_apps_login_enabled\":null,\"money_in_emails_format\":\"¥{{amount_no_decimals}}\",\"money_with_currency_in_emails_format\":\"¥{{amount_no_decimals}} JPY\",\"eligible_for_payments\":true,\"requires_extra_payments_agreement\":false,\"password_enabled\":false,\"has_storefront\":true,\"eligible_for_card_reader_giveaway\":false,\"finances\":true,\"primary_location_id\":59870445735,\"cookie_consent_level\":\"implicit\",\"visitor_tracking_consent_preference\":\"allow_all\",\"checkout_api_supported\":true,\"multi_location_enabled\":true,\"setup_required\":false,\"pre_launch_enabled\":false,\"enabled_presentment_currencies\":[\"JPY\"],\"force_ssl\":true}')
+ERROR - 2021-08-05 12:10:22 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 12:10:43 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 14:05:33 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 15:30:10 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 15:40:41 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 17:01:03 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 17:07:06 --> Page Missing: assets/templates/mariannasenchina.myshopify.com/mod_media_lightbox_e4c58235903122.js
+ERROR - 2021-08-05 18:31:34 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 19:38:44 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 20:39:50 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 21:32:57 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 21:38:55 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 21:47:28 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 21:50:53 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 22:34:26 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js
+ERROR - 2021-08-05 23:16:06 --> Page Missing: assets/templates/little-babyshop.myshopify.com/mod_media_lightbox_f35e149526276174.js

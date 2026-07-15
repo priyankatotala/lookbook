@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "show_title": false,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1f2b05cd-3ff3-4996-ac6a-1d01fdb37070",
+        "padding_top": 90,
+        "padding_bottom": 90,
+        "heading_tag": "automatic"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
+<div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="list">
+                                <div class="look-container"><div id="lookbook-modmedia-container">
+                                Loading...
+                                </div>
+                    </div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+                    {{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+                    <script type="text/javascript">
+                    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+                    var pages_content = {'spring-summer26':{{ pages.spring-summer26.content | json }},'fall-winter25':{{ pages.fall-winter25.content | json }},'spring-summer25':{{ pages.spring-summer25.content | json }},'fall-winter24':{{ pages.fall-winter24.content | json }},'spring-summer24':{{ pages.spring-summer24.content | json }},'pre-spring24-1':{{ pages.pre-spring24-1.content | json }},'fall-winter23':{{ pages.fall-winter23.content | json }},'spring-summer23':{{ pages.spring-summer23.content | json }},'the-holiday-marianna-senchina-x-tsum-holiday-capsule':{{ pages.the-holiday-marianna-senchina-x-tsum-holiday-capsule.content | json }},'spring-summer22':{{ pages.spring-summer22.content | json }},'fall-winteru201921':{{ pages.fall-winteru201921.content | json }},'spring-summer21':{{ pages.spring-summer21.content | json }},'fall-winter20':{{ pages.fall-winter20.content | json }},'spring-summer20':{{ pages.spring-summer20.content | json }},'resort20':{{ pages.resort20.content | json }},'fallwinter1920':{{ pages.fallwinter1920.content | json }},'spring-summeru201919':{{ pages.spring-summeru201919.content | json }},'fall-winteru20191819':{{ pages.fall-winteru20191819.content | json }},'spring-summer18':{{ pages.spring-summer18.content | json }}};
+                        var s = document.createElement("script");
+                        s.type = "text/javascript";
+                        s.src = "https://modapps2.com.au/lookbook/assets/templates/mariannasenchina.myshopify.com/mod_media_lightbox_list_e4c58.js?t=1763981122";
+                        document.getElementsByTagName("head")[0].appendChild(s);
+                    </script></div>

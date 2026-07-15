@@ -1,0 +1,35 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "show_title": false,
+        "heading_font_size": "heading-large",
+        "show_content": true,
+        "text_font_size": "body-medium",
+        "align_text": "text-left",
+        "width": "wrapper--narrow",
+        "color_scheme": "scheme-1f2b05cd-3ff3-4996-ac6a-1d01fdb37070",
+        "padding_top": 90,
+        "padding_bottom": 90,
+        "heading_tag": "automatic"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
+<div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="single">
+            <div class="look-container"><div id="lookbook-modmedia-container">
+            </div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/mariannasenchina.myshopify.com/mod_media_lightbox_e4c58{{page.id}}.js?t=1775038694";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script></div>

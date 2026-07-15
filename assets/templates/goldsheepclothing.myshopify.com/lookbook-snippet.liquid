@@ -1,0 +1,84 @@
+<!-- Orignal code start here 
+
+<section class="content content-area">
+
+  {% include 'breadcrumbs' %}
+
+  <div class="page-title">
+    <span class="label">{{ page.title }}</span>
+  </div>
+
+  <div class="text-content-wrap clearfix">
+    <div class="rte text-content">
+      <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            </div>
+            {{ page.lookbooks.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'goldsheep-moroccan-summer-2019':{{ pages.goldsheep-moroccan-summer-2019.content | json }},'goldsheep-spring-2019':{{ pages.goldsheep-spring-2019.content | json }},'goldsheep-retro-ski-2018':{{ pages.goldsheep-retro-ski-2018.content | json }},'goldsheep-safari':{{ pages.goldsheep-safari.content | json }},'goldsheep-xx-kaley-cuoco':{{ pages.goldsheep-xx-kaley-cuoco.content | json }},'retro-pool-party-sp18':{{ pages.retro-pool-party-sp18.content | json }},'holiday-17':{{ pages.holiday-17.content | json }},'camp-goldsheep-summer-2017':{{ pages.camp-goldsheep-summer-2017.content | json }},'funfair-spring-17':{{ pages.funfair-spring-17.content | json }},'apres-ski-holiday-2016-lookbook':{{ pages.apres-ski-holiday-2016-lookbook.content | json }},'urban-jungle-fall-16-lookbook':{{ pages.urban-jungle-fall-16-lookbook.content | json }},'summer-16-lookbook':{{ pages.summer-16-lookbook.content | json }},'goldsheep-viva-spring-2016-collection':{{ pages.goldsheep-viva-spring-2016-collection.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/goldsheepclothing.myshopify.com/mod_media_lightbox_list_dfac5.js?t=1563756559";
+    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+    </div>
+
+    {% if settings.display-pages-sidebar %}
+    <div class="sidebar rte">
+      {% if settings.pages-sidebar-title %}<h2 class="title">{{ settings.pages-sidebar-title }}</h2>{% endif %}
+      {{ settings.pages-sidebar-content }} 
+    </div>
+    {% endif %}
+
+  </div>
+
+</section>
+
+ Orignal code end here -->
+
+
+
+<!-- Cody by daljeet-->
+
+
+<section class="content content-area">
+
+  {% include 'breadcrumbs' %}
+
+  <div class="page-title">
+    <span class="label">{{ page.title }}</span>
+  </div>
+
+  <div class="text-content-wrap clearfix">
+    <div class="rte text-content" style="width:100%; padding-right:0px;">
+      <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            </div>
+            {{ page.lookbooks.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'goldsheep-moroccan-summer-2019':{{ pages.goldsheep-moroccan-summer-2019.content | json }},'goldsheep-spring-2019':{{ pages.goldsheep-spring-2019.content | json }},'goldsheep-retro-ski-2018':{{ pages.goldsheep-retro-ski-2018.content | json }},'goldsheep-safari':{{ pages.goldsheep-safari.content | json }},'goldsheep-xx-kaley-cuoco':{{ pages.goldsheep-xx-kaley-cuoco.content | json }},'retro-pool-party-sp18':{{ pages.retro-pool-party-sp18.content | json }},'holiday-17':{{ pages.holiday-17.content | json }},'camp-goldsheep-summer-2017':{{ pages.camp-goldsheep-summer-2017.content | json }},'funfair-spring-17':{{ pages.funfair-spring-17.content | json }},'apres-ski-holiday-2016-lookbook':{{ pages.apres-ski-holiday-2016-lookbook.content | json }},'urban-jungle-fall-16-lookbook':{{ pages.urban-jungle-fall-16-lookbook.content | json }},'summer-16-lookbook':{{ pages.summer-16-lookbook.content | json }},'goldsheep-viva-spring-2016-collection':{{ pages.goldsheep-viva-spring-2016-collection.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://modapps2.com.au/lookbook/assets/templates/goldsheepclothing.myshopify.com/mod_media_lightbox_list_dfac5.js?t=1563756559";
+    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+    </div>
+
+    {% if settings.display-pages-sidebar %}
+
+    {% endif %}
+
+  </div>
+
+</section>
+
+
+

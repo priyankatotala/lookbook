@@ -1,0 +1,20 @@
+<article class="page">
+  {% include 'masthead', title: page.title %}
+
+  <div>
+    <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div>            
+            {{ page.supergoods-autumn-winter-2017-8-supergoods-5-years-edition.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/supergoods.myshopify.com/mod_media_lightbox_1c34c205922817.js?t=1504250163";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+  </div>
+</article>

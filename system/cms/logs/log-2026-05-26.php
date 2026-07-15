@@ -1,0 +1,136 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2026-05-26 00:12:42 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 00:18:08 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 00:26:31 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 00:58:34 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 00:58:35 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:04:29 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:07:52 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:11:27 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:15:23 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:18:59 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:19:42 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:20:41 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:20:47 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:23:56 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:24:26 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:40:17 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:40:18 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:44:43 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:45:59 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:46:59 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 01:52:43 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 02:28:46 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 02:30:04 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 02:53:42 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:02:31 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:02:31 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:06:14 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:06:46 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:08:34 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:08:49 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:15:16 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:15:33 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:20:28 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:22:01 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:25:34 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:27:29 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:31:24 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:54:43 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:55:35 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:57:31 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:57:52 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 03:57:57 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 04:11:31 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 04:14:38 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 04:27:28 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 04:29:41 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 04:35:33 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 05:14:21 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 05:19:16 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 05:20:04 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 05:33:28 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 05:34:04 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 05:45:25 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 05:45:30 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 06:24:10 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 06:41:52 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 06:46:39 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 06:48:59 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 06:54:46 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 07:01:19 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 07:01:20 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 07:01:52 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 08:06:26 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 12:34:41 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 12:36:04 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 12:47:54 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 13:07:13 --> Page Missing: assets/templates/kolor-official-online-store.myshopify.com/mod_media_lightbox_83cab104935620704.js
+ERROR - 2026-05-26 13:11:23 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 13:12:04 --> Page Missing: assets/templates/kolor-official-online-store.myshopify.com/mod_media_lightbox_83cab104935620704.js
+ERROR - 2026-05-26 13:40:36 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 13:42:37 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 13:46:13 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 14:18:24 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 14:18:58 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 14:33:16 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 15:32:32 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 15:48:20 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 16:27:05 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 16:41:52 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 16:54:57 --> Severity: Notice  --> Undefined variable: old_sort /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/dashboard.php 97
+ERROR - 2026-05-26 16:54:57 --> Severity: Warning  --> join(): Invalid arguments passed /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/dashboard.php 97
+ERROR - 2026-05-26 16:55:42 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 16:55:47 --> Severity: Notice  --> Undefined variable: old_sort /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/dashboard.php 97
+ERROR - 2026-05-26 16:55:47 --> Severity: Warning  --> join(): Invalid arguments passed /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/dashboard.php 97
+ERROR - 2026-05-26 16:55:57 --> Severity: Notice  --> Undefined variable: lookbooks_page_id /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/form.php 19
+ERROR - 2026-05-26 17:07:38 --> Severity: Notice  --> Undefined variable: opacity /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/themes/views/form-lightbox-list.php 56
+ERROR - 2026-05-26 17:10:15 --> Severity: Notice  --> Undefined property: stdClass::$homepage_snippet_display /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/themes/libraries/lookbook_themes.php 220
+ERROR - 2026-05-26 17:11:26 --> Severity: Notice  --> Undefined property: stdClass::$homepage_snippet_display /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/themes/libraries/lookbook_themes.php 220
+ERROR - 2026-05-26 17:12:54 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 17:13:52 --> Severity: Notice  --> Undefined property: stdClass::$homepage_snippet_display /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/themes/libraries/lookbook_themes.php 220
+ERROR - 2026-05-26 17:34:31 --> Severity: Notice  --> Undefined variable: lookbooks_page_id /var/www/vhosts/modapps2.com.au/httpdocs/lookbook/addons/shared_addons/modules/lookbook/views/form.php 19
+ERROR - 2026-05-26 17:35:28 --> Page Missing: assets/templates/fishboxmexico.myshopify.com/mod_media_lightbox_6730a133185175801.js
+ERROR - 2026-05-26 17:37:28 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 17:51:15 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 18:07:42 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 18:22:53 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 18:23:23 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 18:23:34 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 18:25:33 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 18:25:50 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 18:26:00 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 18:33:06 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 18:33:14 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 18:33:59 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 19:07:42 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 19:18:50 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 19:20:55 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 19:26:35 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 19:36:32 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 20:03:44 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 20:26:19 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 20:44:12 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 20:46:51 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 21:06:12 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 21:08:14 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 21:19:41 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 21:30:15 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 21:30:36 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 21:31:17 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 21:39:50 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 21:41:43 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 21:50:42 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 22:08:20 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 22:13:11 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 22:29:51 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 22:37:07 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 22:44:53 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 22:48:07 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 23:10:08 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 23:17:02 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 23:25:16 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 23:40:14 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 23:56:34 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js
+ERROR - 2026-05-26 23:59:05 --> Page Missing: assets/templates/swisscodemex.myshopify.com/mod_media_lightbox_b07ef85587787879.js

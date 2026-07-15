@@ -1,0 +1,38 @@
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+li{
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.lookbook-modmedia-flexslider li{
+    margin-bottom: 0px;
+}
+.modmedia-image{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+li img{
+    max-width: 100%;
+}
+.modmedia-lookbook-item-hover{
+    display: none;
+    position: absolute;
+    background: #FFF;
+    border: 1px solid #AAA;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.24);
+    z-index: 20;
+    padding: 10px;
+}
+.modmedia-lookbook-product-image{
+    height: 150px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.lookbook-item{
+    cursor: pointer;
+}

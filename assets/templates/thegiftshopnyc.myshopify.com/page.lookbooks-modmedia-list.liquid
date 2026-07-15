@@ -1,0 +1,32 @@
+<!-- /templates/page.liquid -->
+<div class="grid">
+  <div class="grid__item large--five-sixths push--large--one-twelfth">
+
+    <header class="section-header text-center">
+      <h1>{{ page.title }}</h1>
+      <hr class="hr--small">
+    </header>
+
+    <div class="grid">
+      <div class="grid__item large--four-fifths push--large--one-tenth">
+        <div class="rte rte--nomargin rte--indented-images">
+          <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'the-casual-pleasure-of-disappointment-magazine-1':{{ pages.the-casual-pleasure-of-disappointment-magazine-1.content | json }},'vaquera-ss17-nyfw':{{ pages.vaquera-ss17-nyfw.content | json }},'total-proof-the-gala-committee-1995-1997-collection':{{ pages.total-proof-the-gala-committee-1995-1997-collection.content | json }},'eckhaus-latta-nyfw-ss17-ater-party':{{ pages.eckhaus-latta-nyfw-ss17-ater-party.content | json }},'non-duty-free':{{ pages.non-duty-free.content | json }},'shelf-life-gracie-mansion':{{ pages.shelf-life-gracie-mansion.content | json }},'bury-me-with-the-lo-on-1':{{ pages.bury-me-with-the-lo-on-1.content | json }},'shelf-life-bury-me-with-the-lo-on':{{ pages.shelf-life-bury-me-with-the-lo-on.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/thegiftshopnyc.myshopify.com/mod_media_lightbox_list_a819a.js?t=1491323529";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

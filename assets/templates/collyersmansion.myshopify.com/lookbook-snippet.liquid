@@ -1,0 +1,25 @@
+<!-- /templates/page.liquid -->
+<div class="wrapper page-margin">
+  <div class="grid">
+    <div class="grid__item">
+      <h1 class="text-center h2">{{ page.title }}</h1>
+      <div class="rte">
+        <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            </div>
+            {{ page.lookbooks.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'rugs':{{ pages.rugs.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http//shopifyexpert.com.au/lookbook/assets/templates/collyersmansion.myshopify.com/mod_media_lightbox_list_a75e9.js?t=1520564771";
+    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+      </div>
+    </div>
+  </div>
+</div>

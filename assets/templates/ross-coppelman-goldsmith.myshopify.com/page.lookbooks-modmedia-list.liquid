@@ -1,0 +1,15 @@
+{% section 'static-page' %}
+<div class='lookbook-spe-content'><div id="modmedia-lookbooks" class="list">
+                                <div class="look-container"><div id="lookbook-modmedia-container">
+                                Loading...
+                                </div>
+                    </div></div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+                    {{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+                    <script type="text/javascript">
+                    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+                    var pages_content = {'ross-coppelman-2022-catalog':{{ pages.ross-coppelman-2022-catalog.content | json }},'ross-coppelman-2024':{{ pages.ross-coppelman-2024.content | json }},'2025-catalog':{{ pages.2025-catalog.content | json }},'ross-coppelman-2023':{{ pages.ross-coppelman-2023.content | json }},'ross-coppelman-2026-catalog':{{ pages.ross-coppelman-2026-catalog.content | json }},'catalog-2021':{{ pages.catalog-2021.content | json }}};
+                        var s = document.createElement("script");
+                        s.type = "text/javascript";
+                        s.src = "https://modapps2.com.au/lookbook/assets/templates/ross-coppelman-goldsmith.myshopify.com/mod_media_lightbox_list_3c223.js?t=1763773834";
+                        document.getElementsByTagName("head")[0].appendChild(s);
+                    </script></div>

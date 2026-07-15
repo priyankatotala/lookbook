@@ -1,0 +1,32 @@
+<div class="page-container">
+
+  <h1>{{ page.title }}</h1>
+
+  <div class="grid">
+    <div id="page-content" class="grid-item{% if settings.show_page_blog %} col-8 small--col-12{% endif %}">
+      <div class="rte">
+        <div id="modmedia-lookbooks" class="single">
+            <div id="lookbook-modmedia-container">
+            </div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+    var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/meamacbags.myshopify.com/mod_media_lightbox_3add9{{page.id}}.js?t=1430258230";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+      </div>
+    </div><!-- #page-content -->
+
+    {% if settings.show_page_blog %}
+      <div class="grid-item col-4 small--col-12">
+        {% include 'snippet-sidebar' %}
+      </div>
+    {% endif %}
+
+  </div>
+
+</div><!-- #page-container -->
+{% include 'snippet-breadcrumbs' %}

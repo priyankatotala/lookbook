@@ -1,0 +1,19 @@
+<div id="page" class="row">
+  <div class="span12 details">
+    <h1>{{ page.title }}</h1>
+    <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div>
+{{ page.content }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'fall-2014':{{ pages.fall-2014.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "//shopifyexpert.com.au/lookbook/assets/templates/hstryclothing.myshopify.com/mod_media_lightbox_list_36151.js?t=1411770418";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+  </div> <!-- /.span12 -->
+</div> <!-- /#page.row -->

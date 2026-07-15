@@ -1,0 +1,22 @@
+<div class="container cf">
+  <div class="page-header cf">
+    <h1 class="majortitle">{{ page.title }}</h1>
+    <div class="social-area">{% include 'social-sharing' %}</div>
+  </div>
+  <div class="user-content row-spacing {% if settings.lightbox_imgs %}lightboximages{% endif %}">
+    <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            Loading...
+            </div>
+</div><div class='lookbook-spe-content'>{{ page.content }}</div>{{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'influencers-in-fall-2016':{{ pages.influencers-in-fall-2016.content | json }},'press-spring-2017':{{ pages.press-spring-2017.content | json }},'press-fall-2016':{{ pages.press-fall-2016.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "https://shopifyexpert.com.au/lookbook/assets/templates/press-temp.myshopify.com/mod_media_lightbox_list_ba6d8.js?t=1487185984";
+    document.getElementsByTagName("head")[0].appendChild(s);
+</script>
+  </div>
+</div>

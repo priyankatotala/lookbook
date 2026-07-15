@@ -1,0 +1,37 @@
+{% if settings.products_featured_collection != blank %}
+  {% if collections[settings.products_featured_collection].products_count != 0 %}
+    {% assign sidebar_enable = true %}
+  {% endif %}
+{% endif %}
+
+<h1 class="small--text-center">{{ page.title }}</h1>
+
+<div class="grid">
+  <div class="grid__item{% if sidebar_enable %} medium-up--three-quarters large-up--four-fifths{% endif %}">
+    <div class="content-block content-block--large">
+      <div class="rte rte--indented-images">
+        <div id="modmedia-lookbooks" class="list">
+            <div id="lookbook-modmedia-container">
+            </div>
+            {{ page.lookbooks.content }}
+                {{ 'lookbooks-modmedia-styles.css' | asset_url | stylesheet_tag }}
+{{ 'lookbooks-modmedia-scripts.js' | asset_url | script_tag }}
+</div>
+<script type="text/javascript">
+var modlookbook_money_with_currency_format = "{{ shop.money_with_currency_format }}";
+var pages_content = {'kohns-pool':{{ pages.kohns-pool.content | json }}};
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.src = "http//shopifyexpert.com.au/lookbook/assets/templates/kohn-kartel.myshopify.com/mod_media_lightbox_list_d6c7f.js?t=1477765185";
+    document.getElementsByTagName("head")[0].appendChild(s);
+                </script>
+        {% include 'lookbooks-app' %}
+      </div>
+    </div>
+  </div>
+  {% if sidebar_enable %}
+    <div class="grid__item medium-up--one-quarter large-up--one-fifth small--hide">
+      {% include 'featured-products' %}
+    </div>
+  {% endif %}
+</div>
